@@ -1,18 +1,16 @@
 import './App.css';
 import React from 'react';
 import routes from 'routes';
-// import Home from 'views/home';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {NavBar} from 'components/molecules/NavBar';
 
 const App = () => (
-  <div className="App">
+  <div>
     <Router>
+      <NavBar />
       <Routes>
-        {/* <Route path="/" element={<Home />} />*/}
-        {/* <Route>*/}
         {
           routes.map(({
-            title,
             component: Component,
             url,
           }) => {
@@ -21,13 +19,10 @@ const App = () => (
                 key={url}
                 path={url}
                 element={<Component />}
-                // element={(props) =>
-                //   <Component {...props} title={title} />}
               />
             );
           })
         }
-        {/* </Route>*/}
       </Routes>
     </Router>
   </div>
