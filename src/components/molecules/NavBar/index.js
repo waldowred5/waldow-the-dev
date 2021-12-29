@@ -2,71 +2,22 @@ import React from 'react';
 import StyledNavBar, {
   LogoLinkWrapper,
   NavMenu,
-  NavLink,
-  NavItem,
 } from './styles';
-// import { animateScroll as scroll } from 'react-scroll';
 import { Logo } from 'components/atoms/Logo';
-// import routes from 'routes';
-// import { Routes } from 'react-router-dom';
-// import { NavItem } from '../../atoms/NavItem';
+import PropTypes from 'prop-types';
+import { NavItem } from 'components/atoms/NavItem';
 
-// NAVLINK (scroll)
-// activeClass='active'
-// offset={-90}
-// duration={500}
-// spy={true}
-// smooth={true}>Home</NavLink>
-
-export const NavBar = () => (
+export const NavBar = ({ routes }) => (
   <StyledNavBar>
-    <LogoLinkWrapper to={'/'}>
-      <Logo />
-    </LogoLinkWrapper>
-    {/* {routesList}*/}
-    {/* <NavItem link={'about'} label={'About'}/>*/}
+    <LogoLinkWrapper to={'/'}><Logo /></LogoLinkWrapper>
     <NavMenu>
-      <NavItem>
-        <NavLink to={'/'}
-          activeClass='active'
-          offset={-90}
-          duration={500}
-          spy={true}
-          smooth={true}>Home</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to={'about'}
-          activeClass='active'
-          offset={-90}
-          duration={500}
-          spy={true}
-          smooth={true}>About</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to={'projects'}
-          activeClass='active'
-          offset={-90}
-          duration={500}
-          spy={true}
-          smooth={true}>Projects</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to={'blog'}
-          activeClass='active'
-          offset={-90}
-          duration={500}
-          spy={true}
-          smooth={true}>Blog</NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink to={'contact'}
-          activeClass='active'
-          offset={-90}
-          duration={500}
-          spy={true}
-          smooth={true}>Contact</NavLink>
-      </NavItem>
+      {routes.map((route, index) => (
+        <NavItem key={index} label={route.label} id={route.id}/>
+      ))}
     </NavMenu>
   </StyledNavBar>
 );
 
+NavBar.propTypes = {
+  routes: PropTypes.arrayOf,
+};

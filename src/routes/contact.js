@@ -1,8 +1,8 @@
-import Contact from 'pages/contact';
+import Contact from 'pages/home/contact';
 
 export default {
   id: 'contact',
-  title: 'Contact',
+  label: 'Contact',
   component: Contact,
   url: '/contact',
   exact: true,

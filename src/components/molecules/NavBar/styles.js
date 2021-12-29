@@ -1,15 +1,13 @@
 import styled from 'styled-components';
-import { media, SCREEN_SIZE } from 'utils/styles/layout';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const StyledNavBar = styled.nav`
   // Color
-  background: lightseagreen;
+  background: #007A62;
   
   // Display
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   
   // Position
@@ -20,36 +18,21 @@ const StyledNavBar = styled.nav`
   box-sizing: border-box;
   height: 90px;
   margin-top: -90px;
-  
-  ${media[SCREEN_SIZE.TABLET]} {
-    // Animation
-    //transition: 0.8s ease all;
-    
-    // Color
-    background: green;
-  };
-}
 `;
 
-export const LogoLinkWrapper = styled(LinkR)`
+export const LogoLinkWrapper = styled(Link)`
+  // Display
   display: flex;
 `;
 
 export const NavMenu = styled.ul`
+  // Display
   display: flex;
   align-items: center;
-`;
-
-export const NavItem = styled.li`
-  display: flex;
-  align-items: center;
-  margin-left: 16px;
-`;
-
-export const NavLink = styled(LinkS)`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  
+  // Sizing
+  padding: 0;
+  margin: 0;
 `;
 
 export default StyledNavBar;

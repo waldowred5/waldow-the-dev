@@ -1,8 +1,8 @@
-import Projects from 'pages/projects';
+import Projects from 'pages/home/projects';
 
 export default {
   id: 'projects',
-  title: 'Projects',
+  label: 'Projects',
   component: Projects,
   url: '/projects',
   exact: true,

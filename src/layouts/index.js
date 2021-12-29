@@ -1,56 +1,19 @@
 import React from 'react';
-import { NavBar } from 'components/molecules/NavBar';
-// import { Route, Routes } from 'react-router-dom';
-import Home from 'pages/home';
-import About from 'pages/about';
-import Projects from 'pages/projects';
-import Blog from 'pages/blog';
-import Contact from 'pages/contact';
-// import routes from 'routes';
-
-// MOVE THIS TO CONTROLLER
-// const routesList = routes.map(({
-//   component: Component,
-//   id,
-//   url,
-// }) => {
-//   return (
-//     <Route
-//       id={id}
-//       key={url}
-//       path={url}
-//       element={<Component />}
-//     />
-//   );
-// });
+import Hero from 'pages/home/hero';
+import About from 'pages/home/about';
+import Projects from 'pages/home/projects';
+import Blog from 'pages/home/blog';
+import Contact from 'pages/home/contact';
+import { NavBarController } from 'controllers/NavBar';
 
 const Layout = () => (
   <>
-    <NavBar />
-    {/* <Routes>*/}
-    {/* {*/}
-    {/*  routes.map(({*/}
-    {/*    component: Component,*/}
-    {/*    id,*/}
-    {/*    title,*/}
-    {/*    url,*/}
-    {/*  }) => {*/}
-    {/*    return (*/}
-    {/*      <Route*/}
-    {/*        id={id}*/}
-    {/*        key={url}*/}
-    {/*        path={url}*/}
-    {/*        element={<Component title={title}/>}*/}
-    {/*      />*/}
-    {/*    );*/}
-    {/*  })*/}
-    {/* }*/}
-    <Home />
+    <NavBarController />
+    <Hero />
     <About />
     <Projects />
     <Blog />
     <Contact />
-    {/* </Routes>*/}
   </>
 );
 

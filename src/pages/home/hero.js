@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => (
+const Hero = () => (
   <>
-    <div id='/'
+    <div id='hero'
       style={{ marginTop: 90, height: '100vh', background: 'lightBlue' }}>
-        Home</div>
+        Hero</div>
   </>
 );
 
-export default Home;
+export default Hero;

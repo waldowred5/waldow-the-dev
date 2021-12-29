@@ -98,7 +98,7 @@ export const MobilePrimaryHeading = styled.h1`
 
   // Font
   font-size: 74px;
-  font-family: 'Bangers', serif;
+  font-family: 'Bangers', cursive;
   font-weight: 400;
 
   // Sizing
@@ -116,7 +116,7 @@ export const TabletPrimaryHeading = styled.h1`
 
   // Font
   font-size: 48px;
-  font-family: 'Bangers', serif;
+  font-family: 'Bangers', cursive;
   font-weight: 400;
 
   // Sizing

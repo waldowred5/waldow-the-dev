@@ -1,8 +1,8 @@
-import About from 'pages/about';
+import About from 'pages/home/about';
 
 export default {
   id: 'about',
-  title: 'About',
+  label: 'About',
   component: About,
   url: '/about',
   exact: true,
