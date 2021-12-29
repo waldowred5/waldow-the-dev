@@ -3,15 +3,19 @@ import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 const StyledLogo = styled.div`
   // Color
-  filter: drop-shadow(0 0 20px #007A62);
+  filter: drop-shadow(0 0 15px #007A62);
   
   // Display
   display: flex;
 
   // Sizing
-  margin-left: 4px;
+  margin-left: 16px;
+  margin-top: 32px;
   
   ${media[SCREEN_SIZE.TABLET]} {
+    // Color
+    filter: drop-shadow(0 0 20px #007A62);
+    
     // Sizing
     margin-left: 80px;
     margin-top: 120px;
@@ -136,9 +140,9 @@ export const SecondaryHeading = styled.h3`
   display: none;
 
   // Font
-  font-size: 22px;
+  font-size: 24px;
   line-height: 22px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Baloo 2', cursive;
   font-weight: 700;
 
   // Sizing

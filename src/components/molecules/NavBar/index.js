@@ -5,7 +5,7 @@ import StyledNavBar, {
   NavMenu,
 } from './styles';
 import { Logo } from 'components/atoms/Logo';
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 import { NavItem } from 'components/atoms/NavItem';
 
 export const NavBar = ({ routes }) => (
@@ -22,5 +22,9 @@ export const NavBar = ({ routes }) => (
 );
 
 NavBar.propTypes = {
-  routes: PropTypes.arrayOf,
+  routes: PropTypes.arrayOf(
+      shape({
+        id: PropTypes.string,
+        label: PropTypes.string,
+      })),
 };

@@ -1,11 +1,10 @@
 import React from 'react';
+import { HeroController } from '../../controllers/Hero';
 
 const Hero = () => (
-  <>
-    <div id='hero'
-      style={{ marginTop: 90, height: '100vh', background: '#071D3A' }}>
-        Hero</div>
-  </>
+  <div id='hero'>
+    <HeroController />
+  </div>
 );
 
 export default Hero;

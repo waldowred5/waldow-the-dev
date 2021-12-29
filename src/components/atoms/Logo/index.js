@@ -14,24 +14,22 @@ const lang = {
   secondaryHeading: '.the.dev',
 };
 
-export const Logo = () => {
-  return (
-    <StyledLogo>
-      <OuterContainer>
-        <InnerContainer>
-          <TextWrapper>
-            <MobilePrimaryHeading>
-              {lang.mobilePrimaryHeading}
-            </MobilePrimaryHeading>
-            <TabletPrimaryHeading>
-              {lang.tabletPrimaryHeading}
-            </TabletPrimaryHeading>
-            <SecondaryHeading>
-              {lang.secondaryHeading}
-            </SecondaryHeading>
-          </TextWrapper>
-        </InnerContainer>
-      </OuterContainer>
-    </StyledLogo>
-  );
-};
+export const Logo = () => (
+  <StyledLogo>
+    <OuterContainer>
+      <InnerContainer>
+        <TextWrapper>
+          <MobilePrimaryHeading>
+            {lang.mobilePrimaryHeading}
+          </MobilePrimaryHeading>
+          <TabletPrimaryHeading>
+            {lang.tabletPrimaryHeading}
+          </TabletPrimaryHeading>
+          <SecondaryHeading>
+            {lang.secondaryHeading}
+          </SecondaryHeading>
+        </TextWrapper>
+      </InnerContainer>
+    </OuterContainer>
+  </StyledLogo>
+);
