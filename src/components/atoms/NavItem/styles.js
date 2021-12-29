@@ -5,6 +5,17 @@ import { media, SCREEN_SIZE } from 'utils/styles/layout';
 const StyledNavItem = styled.li`
   // Display
   display: flex;
+  flex-direction: column;
+`;
+
+export const NavLabel = styled.p`  
+  // Font
+  font-size: 28px;
+  font-family: 'Bangers', cursive;
+  color: #DEE2E3;
+  
+  // Sizing
+  margin: 0;
 `;
 
 export const NavLink = styled(LinkS)`
@@ -29,21 +40,6 @@ export const NavLink = styled(LinkS)`
       // Sizing
       border-bottom: 4px solid #07B8ED;
     }
-  }
-`;
-
-export const NavLabel = styled.p`  
-  // Font
-  font-size: 24px;
-  font-family: 'Bangers', cursive;
-  color: #DEE2E3;
-  
-  // Sizing
-  margin: 0;
-
-  ${media[SCREEN_SIZE.DESKTOP]} {
-    // Font
-    font-size: 36px;
   }
 `;
 

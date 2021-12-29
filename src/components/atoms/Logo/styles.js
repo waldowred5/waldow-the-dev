@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 const StyledLogo = styled.div`
+  // Color
+  filter: drop-shadow(0 0 20px #007A62);
+  
   // Display
   display: flex;
 
@@ -11,7 +14,7 @@ const StyledLogo = styled.div`
   ${media[SCREEN_SIZE.TABLET]} {
     // Sizing
     margin-left: 80px;
-    margin-top: 40px;
+    margin-top: 120px;
   }
 `;
 
@@ -133,7 +136,7 @@ export const SecondaryHeading = styled.h3`
   display: none;
 
   // Font
-  font-size: 24px;
+  font-size: 22px;
   line-height: 22px;
   font-family: 'Montserrat', serif;
   font-weight: 700;
