@@ -1,10 +1,14 @@
 import React from 'react';
-import StyledNavItem, {NavLabel} from './styles';
+import PropTypes from 'prop-types';
+import StyledNavItem from './styles';
 
-export const NavItem = () => {
+export const NavItem = ({ label, link }) => {
   return (
-    <StyledNavItem>
-      <NavLabel>PROJECTS</NavLabel>
-    </StyledNavItem>
+    <StyledNavItem to={link}>{label}</StyledNavItem>
   );
+};
+
+NavItem.propTypes = {
+  label: PropTypes.string,
+  link: PropTypes.string,
 };

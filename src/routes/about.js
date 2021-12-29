@@ -1,7 +1,9 @@
-import about from 'views/about';
+import About from 'pages/about';
 
 export default {
-  title: 'about',
-  component: about,
+  id: 'about',
+  title: 'About',
+  component: About,
   url: '/about',
+  exact: true,
 };

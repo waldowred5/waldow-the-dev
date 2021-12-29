@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-// import {Link as LinkS} from 'react-scroll';
-import {media, SCREEN_SIZE} from 'utils/styles/layout';
+import { Link as LinkS } from 'react-scroll';
+import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
-const StyledNavItem = styled.div`
+const StyledNavItem = styled(LinkS)`
   // Display
   display: flex;
   justify-content: center;
@@ -32,5 +32,9 @@ export const NavLabel = styled.p`
   // Sizing
   margin: 0;
 `;
+
+// export const NavLink = styled(LinkS)`
+//   display: flex;
+// `;
 
 export default StyledNavItem;

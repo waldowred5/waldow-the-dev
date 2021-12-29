@@ -10,5 +10,5 @@ export const BREAKPOINTS = {
 
 export const media = Object.entries(BREAKPOINTS)
     .reduce((acc, [key, value]) => (
-      {...acc, [key]: `@media (min-width: ${value}px)`}),
+      { ...acc, [key]: `@media (min-width: ${value}px)` }),
     {});

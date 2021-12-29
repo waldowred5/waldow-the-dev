@@ -1,29 +1,12 @@
 import './App.css';
 import React from 'react';
-import routes from 'routes';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {NavBar} from 'components/molecules/NavBar';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Layout from 'layouts';
 
 const App = () => (
   <div>
     <Router>
-      <NavBar />
-      <Routes>
-        {
-          routes.map(({
-            component: Component,
-            url,
-          }) => {
-            return (
-              <Route
-                key={url}
-                path={url}
-                element={<Component />}
-              />
-            );
-          })
-        }
-      </Routes>
+      <Layout />
     </Router>
   </div>
 );

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {media, SCREEN_SIZE} from 'utils/styles/layout';
+import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 const StyledLogo = styled.div`
   // Display
@@ -8,9 +8,6 @@ const StyledLogo = styled.div`
   // Sizing
   margin-left: 4px;
   
-  // Interaction
-  cursor: pointer;
-
   ${media[SCREEN_SIZE.TABLET]} {
     // Sizing
     margin-left: 80px;
@@ -77,7 +74,7 @@ export const TextWrapper = styled.div`
   align-items: flex-end;
 
   // Font
-  text-shadow: 0 0 6px #071D3A;
+  text-shadow: 0 0 6px #071D3A; // update with ThemeProvider
 
   // Position
   position: absolute;

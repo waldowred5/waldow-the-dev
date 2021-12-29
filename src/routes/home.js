@@ -1,6 +1,7 @@
-import Home from 'views/home';
+import Home from 'pages/home';
 
 export default {
+  id: '/',
   title: 'Home',
   component: Home,
   url: '/',
