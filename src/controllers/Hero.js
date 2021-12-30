@@ -1,4 +1,5 @@
 import React from 'react';
+// import { CubeAnimation } from 'components/atoms/CubeAnimation';
 import ThreeJsCanvas, {
   HeadingContainer, PrimaryHeadingWrapper,
   PrimaryHOne,
@@ -8,6 +9,7 @@ import ThreeJsCanvas, {
 
 export const HeroController = () => (
   <>
+    {/* <CubeAnimation />*/}
     <ThreeJsCanvas />
     <HeadingContainer>
       <PrimaryHeadingWrapper>

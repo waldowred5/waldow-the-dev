@@ -2,13 +2,18 @@ import React from 'react';
 import StyledHeading from './styles';
 import PropTypes from 'prop-types';
 
-// const customTag = `h${number}`;
-
-export const Heading = ({ children, colorVariant, fontSize, type }) => (
+export const Heading = ({
+  children,
+  colorVariant,
+  fontFamily,
+  fontSize,
+  type }) => (
   <StyledHeading
+    as={type}
     colorVariant={colorVariant}
+    fontFamily={fontFamily}
     fontSize={fontSize}
-    type={type}
+    // type={type}
   >
     {children}
   </StyledHeading>
@@ -17,6 +22,7 @@ export const Heading = ({ children, colorVariant, fontSize, type }) => (
 Heading.propTypes = {
   children: PropTypes.node.isRequired,
   colorVariant: PropTypes.string,
+  fontFamily: PropTypes.string,
   fontSize: PropTypes.array,
   type: PropTypes.string,
 };

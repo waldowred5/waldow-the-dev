@@ -44,14 +44,14 @@ export const NavLink = styled(LinkS)`
     // Sizing
     width: 120px;
 
-    //&:hover {
-    //  // Color
-    //  background: linear-gradient(#FFFFFF00, #07B8ED59);
-    //  // these values have transparency flags included ^
-    //  
-    //  // Sizing
-    //  border-bottom: 4px solid #07B8ED;
-    //}
+    :not(.active)&:hover {
+      // Color
+      background: linear-gradient(#FFFFFF00, #38E00033);
+      // these values have transparency flags included ^
+      
+      // Sizing
+      border-bottom: 4px solid #38E00080;
+    }
   }
 `;
 

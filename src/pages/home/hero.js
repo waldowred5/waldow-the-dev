@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroController } from '../../controllers/Hero';
+import { HeroController } from 'controllers/Hero';
 
 const Hero = () => (
   <div id='hero'>

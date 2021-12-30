@@ -12,3 +12,6 @@ export const media = Object.entries(BREAKPOINTS)
     .reduce((acc, [key, value]) => (
       { ...acc, [key]: `@media (min-width: ${value}px)` }),
     {});
+
+const baseRemSize = 16;
+export const fontPx = (size) => `${size / baseRemSize}rem`;

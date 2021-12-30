@@ -6,9 +6,9 @@ import Blog from 'pages/home/blog';
 import Contact from 'pages/home/contact';
 import { NavBarController } from 'controllers/NavBar';
 
-const Layout = () => (
+const Layout = (props) => (
   <>
-    <NavBarController />
+    <NavBarController {...props} />
     <Hero />
     <About />
     <Projects />

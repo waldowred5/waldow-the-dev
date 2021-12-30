@@ -7,11 +7,13 @@ import StyledNavBar, {
 import { Logo } from 'components/atoms/Logo';
 import PropTypes, { shape } from 'prop-types';
 import { NavItem } from 'components/atoms/NavItem';
+import ThemeButton from 'componentsSmart/themeSelector';
 
-export const NavBar = ({ routes }) => (
+export const NavBar = ({ routes, setter }) => (
   <BackgroundFilter>
     <StyledNavBar>
       <LogoLinkWrapper to={'/'}><Logo /></LogoLinkWrapper>
+      <ThemeButton setter={setter}>Theme</ThemeButton>
       <NavMenu>
         {routes.map((route, index) => (
           <NavItem key={index} label={route.label} id={route.id}/>
@@ -27,4 +29,5 @@ NavBar.propTypes = {
         id: PropTypes.string,
         label: PropTypes.string,
       })),
+  setter: PropTypes.func,
 };
