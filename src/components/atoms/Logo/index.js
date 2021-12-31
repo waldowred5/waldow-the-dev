@@ -7,6 +7,7 @@ import StyledLogo, {
   TabletPrimaryHeading,
   SecondaryHeading,
 } from './styles';
+import PropTypes from 'prop-types';
 
 const lang = {
   mobilePrimaryHeading: 'W',
@@ -14,12 +15,12 @@ const lang = {
   secondaryHeading: '.the.dev',
 };
 
-export const Logo = () => (
+export const Logo = ({ theme }) => (
   <StyledLogo>
     <OuterContainer>
       <InnerContainer>
         <TextWrapper>
-          <MobilePrimaryHeading>
+          <MobilePrimaryHeading theme={theme}>
             {lang.mobilePrimaryHeading}
           </MobilePrimaryHeading>
           <TabletPrimaryHeading>
@@ -33,3 +34,7 @@ export const Logo = () => (
     </OuterContainer>
   </StyledLogo>
 );
+
+Logo.propTypes = {
+  theme: PropTypes.object,
+};

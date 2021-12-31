@@ -1,30 +1,38 @@
 import styled from 'styled-components';
-import { media, SCREEN_SIZE } from 'utils/styles/layout';
+import { fontPx, media, SCREEN_SIZE } from 'utils/styles/layout';
+import { getFontFamily, getFontWeight } from 'utils/styles/theme';
+import { FONT_FAMILY, FONT_WEIGHT } from 'utils/constants';
+
+const getLogoStyle = (propName) => ({ theme }) => {
+  const { logo } = theme.components;
+  return logo[propName];
+};
 
 const StyledLogo = styled.div`
   // Color
-  filter: drop-shadow(0 0 15px #007A62);
+  filter: drop-shadow(${getLogoStyle('dropShadowMobile')});
   
   // Display
   display: flex;
-
-  // Sizing
-  margin-left: 16px;
-  margin-top: 32px;
+  
+  // Position
+  position: absolute;
+  top: ${fontPx(16)};
+  left: ${fontPx(16)};
   
   ${media[SCREEN_SIZE.TABLET]} {
     // Color
-    filter: drop-shadow(0 0 20px #007A62);
-    
-    // Sizing
-    margin-left: 80px;
-    margin-top: 120px;
+    filter: drop-shadow(${getLogoStyle('dropShadowTablet')});
+
+    // Position
+    top: ${fontPx(40)};
+    left: ${fontPx(80)};
   }
 `;
 
 export const OuterContainer = styled.div`
   // Color
-  background-color: #C56CEF; // update with ThemeProvider
+  background-color: ${getLogoStyle('outerContainerColor')};
 
   // Display
   display: flex;
@@ -33,47 +41,55 @@ export const OuterContainer = styled.div`
 
   // Shape
   transform: rotate(25deg);
-  border-radius: calc(100px * 0.3);
+  border-radius: calc(
+    ${getLogoStyle('outerContainerRadiusMobile')} * 0.3px
+  );
 
   // Sizing
-  height: 100px;
-  width: 100px;
+  height: ${getLogoStyle('outerContainerRadiusMobile')}px;
+  width: ${getLogoStyle('outerContainerRadiusMobile')}px;
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Shape
-    border-radius: calc(125px * 0.3);
+    border-radius: calc(
+      ${getLogoStyle('outerContainerRadiusTablet')} * 0.3px
+    );
 
     // Sizing
-    height: 125px;
-    width: 125px;
+    height: ${getLogoStyle('outerContainerRadiusTablet')}px;
+    width: ${getLogoStyle('outerContainerRadiusTablet')}px;
   }
 `;
 
 export const InnerContainer = styled.div`
   // Colour
-  background-color: #07B8ED; // update with ThemeProvider
+  background-color: ${getLogoStyle('innerContainerColor')};
 
   // Shape
-  border-radius: calc(84px * 0.3);
+  border-radius: calc(
+    ${getLogoStyle('innerContainerRadiusMobile')} * 0.3px
+  );
 
   // Sizing
-  height: 84px;
-  width: 84px;
-  margin: 5px;
+  height: ${getLogoStyle('innerContainerRadiusMobile')}px;
+  width: ${getLogoStyle('innerContainerRadiusMobile')}px;
+  margin: ${getLogoStyle('innerContainerMargin')}px;
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Shape
-    border-radius: calc(105px * 0.3);
+    border-radius: calc( 
+      ${getLogoStyle('innerContainerRadiusTablet')} * 0.3px
+    );
 
     // Sizing
-    height: 105px;
-    width: 105px;
+    height: ${getLogoStyle('innerContainerRadiusTablet')}px;
+    width: ${getLogoStyle('innerContainerRadiusTablet')}px;
   }
 `;
 
 export const TextWrapper = styled.div`
   // Colour
-  color: #38E000;
+  color: ${getLogoStyle('textColor')};
 
   // Display
   display: flex;
@@ -81,12 +97,16 @@ export const TextWrapper = styled.div`
   align-items: flex-end;
 
   // Font
-  text-shadow: 0 0 6px #071D3A; // update with ThemeProvider
+  text-shadow: ${getLogoStyle('textShadow')};
 
   // Position
   position: absolute;
-  right: calc(125px * 0.25);
-  top: calc(125px * 0.13);
+  right: calc(
+    ${getLogoStyle('textPositionMobileRight')} * 0.25px
+  );
+  top: calc(
+    ${getLogoStyle('textPositionMobileTop')} * 0.13px
+  );
 
   // Shape
   transform: rotate(-25deg);
@@ -94,8 +114,12 @@ export const TextWrapper = styled.div`
   ${media[SCREEN_SIZE.TABLET]} {
     // Position
     position: absolute;
-    right: calc(125px * 0.16);
-    top: calc(125px * 0.27);
+    right: calc(
+      ${getLogoStyle('textPositionTabletRight')} * 0.16px
+    );
+    top: calc(
+      ${getLogoStyle('textPositionTabletTop')} * 0.27px
+    );
   }
 `;
 
@@ -104,9 +128,9 @@ export const MobilePrimaryHeading = styled.h1`
   display: block;
 
   // Font
-  font-size: 74px;
-  font-family: 'Bangers', cursive;
-  font-weight: 400;
+  font-size: ${fontPx(74)};
+  font-family: ${getFontFamily(FONT_FAMILY.TERTIARY)};
+  font-weight: ${getFontWeight(FONT_WEIGHT.REGULAR)};
 
   // Sizing
   margin: 0;
@@ -122,12 +146,12 @@ export const TabletPrimaryHeading = styled.h1`
   display: none;
 
   // Font
-  font-size: 48px;
-  font-family: 'Bangers', cursive;
-  font-weight: 400;
+  font-size: ${fontPx(48)};
+  font-family: ${getFontFamily(FONT_FAMILY.TERTIARY)};
+  font-weight: ${getFontWeight(FONT_WEIGHT.REGULAR)};
 
   // Sizing
-  margin: 0 14px 0 0;
+  margin: ${getLogoStyle('primaryHeadingMarginTablet')};
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display
@@ -139,17 +163,18 @@ export const SecondaryHeading = styled.h3`
   // Display
   display: none;
 
-  // Font
-  font-size: 24px;
-  line-height: 22px;
-  font-family: 'Baloo 2', cursive;
-  font-weight: 700;
-
   // Sizing
   margin: 0;
 
   ${media[SCREEN_SIZE.TABLET]} {
+    // Display
     display: block;
+
+    // Font
+    font-size: ${fontPx(24)};
+    line-height: ${fontPx(22)};
+    font-family: '${getFontFamily(FONT_FAMILY.SECONDARY)}';
+    font-weight: ${getFontWeight(FONT_WEIGHT.SEMI_BOLD)};
   }
 `;
 

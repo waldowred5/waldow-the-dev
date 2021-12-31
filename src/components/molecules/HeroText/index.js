@@ -7,21 +7,22 @@ import StyledHeroText, {
   SuffixHeading,
 } from './styles';
 
-export const HeroText = ({ children, colorVariant, fontSize, type }) => (
-  <StyledHeroText>
-    <PrimaryHeadingWrapper>
-      <PrimaryHeading>WALDOW</PrimaryHeading>
-      <SuffixHeading>.the.dev</SuffixHeading>
-    </PrimaryHeadingWrapper>
-    <SecondaryHeading>
-      Thrill seeker by day, developer by night
-    </SecondaryHeading>
-  </StyledHeroText>
-);
+export const HeroText = ({ theme }) => {
+  return (
+    <StyledHeroText theme={theme}>
+      <PrimaryHeadingWrapper>
+        <PrimaryHeading>WALDOW</PrimaryHeading>
+        <SuffixHeading>.the.dev</SuffixHeading>
+      </PrimaryHeadingWrapper>
+      <SecondaryHeading>
+        Thrill seeker by day, developer by night
+      </SecondaryHeading>
+    </StyledHeroText>
+  );
+};
 
 HeroText.propTypes = {
-  children: PropTypes.node.isRequired,
   colorVariant: PropTypes.string,
-  fontSize: PropTypes.array,
-  type: PropTypes.string,
+  fontFamily: PropTypes.string,
+  theme: PropTypes.object,
 };

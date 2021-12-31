@@ -9,10 +9,10 @@ import PropTypes, { shape } from 'prop-types';
 import { NavItem } from 'components/atoms/NavItem';
 import ThemeButton from 'componentsSmart/themeSelector';
 
-export const NavBar = ({ routes, setter }) => (
+export const NavBar = ({ routes, setter, theme }) => (
   <BackgroundFilter>
     <StyledNavBar>
-      <LogoLinkWrapper to={'/'}><Logo /></LogoLinkWrapper>
+      <LogoLinkWrapper to={'/'}><Logo theme={theme} /></LogoLinkWrapper>
       <ThemeButton setter={setter}>Theme</ThemeButton>
       <NavMenu>
         {routes.map((route, index) => (
@@ -30,4 +30,5 @@ NavBar.propTypes = {
         label: PropTypes.string,
       })),
   setter: PropTypes.func,
+  theme: PropTypes.object,
 };
