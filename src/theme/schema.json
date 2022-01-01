@@ -34,6 +34,17 @@
             "color": "#E0E0E0"
           }
         },
+        "heroText": {
+          "primaryHeadingSize": "96",
+          "primaryHeadingLineHeight": "110",
+          "primaryHeadingMargin": "0 8px 0 0",
+          "secondaryHeadingSize":  48,
+          "secondaryHeadingLineHeight": 56,
+          "secondaryHeadingMargin": "0 48px 0 0",
+          "suffixHeadingSize":  64,
+          "suffixHeadingLineHeight": 68,
+          "suffixHeadingMargin": "40px 0 0 0"
+        },
         "logo": {
           "dropShadowMobile": "0 0 15px #007A62",
           "dropShadowTablet": "0 0 20px #007A62",
@@ -128,6 +139,17 @@
           "tertiary": {
             "color": "#E0E0E0"
           }
+        },
+        "heroText": {
+          "primaryHeadingSize": "96",
+          "primaryHeadingLineHeight": "110",
+          "primaryHeadingMargin": "0 8px 0 0",
+          "secondaryHeadingSize":  48,
+          "secondaryHeadingLineHeight": 56,
+          "secondaryHeadingMargin": "0 48px 0 0",
+          "suffixHeadingSize":  64,
+          "suffixHeadingLineHeight": 68,
+          "suffixHeadingMargin": "40px 0 0 0"
         },
         "logo": {
           "dropShadowMobile": "0 0 15px #007A62",
