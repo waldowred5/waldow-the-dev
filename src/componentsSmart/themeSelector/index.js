@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 import { useTheme } from 'theme/useTheme';
 import { getFromLS } from 'utils/storage';
-import StyledThemeButton from './styles';
+import StyledThemeButton, { StyledContainer } from './styles';
 import PropTypes from 'prop-types';
+import { BUTTON_VARIANT } from 'utils/constants';
 
-const ThemeSelector = ({ children, newTheme, setter }) => {
+const ThemeSelector = ({ children, setter }) => {
   const themesFromStore = getFromLS('all-themes');
   const [data] = useState(themesFromStore.data);
   const [themes, setThemes] = useState([]);
@@ -22,7 +23,11 @@ const ThemeSelector = ({ children, newTheme, setter }) => {
 
   const ThemeButton = ({ theme }) => {
     return (
-      <StyledThemeButton onClick={() => themeSwitcher(theme)}>
+      <StyledThemeButton
+        colorVariant={BUTTON_VARIANT.SECONDARY}
+        onClick={() => themeSwitcher(theme)}
+        theme={theme}
+      >
         Theme: {theme.name}
       </StyledThemeButton>
     );
@@ -33,7 +38,7 @@ const ThemeSelector = ({ children, newTheme, setter }) => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <StyledContainer>
       {
         themes.length && themes.map((theme) =>(
           <ThemeButton
@@ -44,7 +49,7 @@ const ThemeSelector = ({ children, newTheme, setter }) => {
           </ThemeButton>
         ))
       }
-    </div>
+    </StyledContainer>
   );
 };
 

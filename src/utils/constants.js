@@ -1,14 +1,22 @@
-export const FONT_WEIGHT = {
-  REGULAR: 'REGULAR',
-  SEMI_BOLD: 'SEMI_BOLD',
-  BOLD: 'BOLD',
+export const BUTTON_VARIANT = {
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
 };
 
-export const HEADING_TYPE = {
-  H1: 'h1',
-  H2: 'h2',
-  H3: 'h3',
-  H4: 'h4',
-  H5: 'h5',
-  H6: 'h6',
+export const FONT_FAMILY = {
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
+  TERTIARY: 'tertiary',
+};
+
+export const FONT_WEIGHT = {
+  REGULAR: 'regular',
+  SEMI_BOLD: 'semi-bold',
+  BOLD: 'bold',
+};
+
+export const HEADING_VARIANT = {
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
+  TERTIARY: 'tertiary',
 };

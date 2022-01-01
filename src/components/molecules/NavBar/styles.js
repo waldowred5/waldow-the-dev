@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { media, SCREEN_SIZE } from 'utils/styles/layout';
+
+export const getNavBarStyle = (propName) => ({ theme }) => {
+  const { navBar } = theme.components;
+  return navBar[propName];
+};
 
 export const BackgroundFilter = styled.div`
   // Color
-  background: #007A62;
+  background: ${getNavBarStyle('backgroundColor')};
 
   // Display
   display: flex;
@@ -15,13 +21,19 @@ export const BackgroundFilter = styled.div`
 
   // Sizing
   box-sizing: border-box;
-  height: 90px;
-  margin-top: -90px;
+  height: ${getNavBarStyle('heightMobile')}px;
+  margin-top: -${getNavBarStyle('heightMobile')}px;
+
+  ${media[SCREEN_SIZE.TABLET]} {
+    // Sizing
+    height: ${getNavBarStyle('heightTablet')}px;
+    margin-top: -${getNavBarStyle('heightTablet')}px;
+  }
 `;
 
 const StyledNavBar = styled.nav`
   // Color
-  background: linear-gradient(#07B8ED73, #FFFFFF00);
+  background: linear-gradient(${getNavBarStyle('linearGradient')});
 
   // Display
   align-items: center;

@@ -6,15 +6,17 @@ import Blog from 'pages/home/blog';
 import Contact from 'pages/home/contact';
 import { NavBarController } from 'controllers/NavBar';
 
-const Layout = (props) => (
-  <>
-    <NavBarController {...props} />
-    <Hero />
-    <About />
-    <Projects />
-    <Blog />
-    <Contact />
-  </>
-);
+const Layout = (props) => {
+  return (
+    <>
+      <NavBarController {...props} />
+      <Hero {...props} />
+      <About />
+      <Projects />
+      <Blog />
+      <Contact />
+    </>
+  );
+};
 
 export default Layout;

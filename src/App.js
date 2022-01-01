@@ -25,10 +25,10 @@ const App = () => {
   return (
     <>
       {
-        themeLoaded && <ThemeProvider theme={ selectedTheme }>
-          <GlobalStyles/>
-          <Router style={{ fontFamily: selectedTheme.font }}>
-            <Layout setter={setSelectedTheme} />
+        themeLoaded && <ThemeProvider theme={selectedTheme}>
+          <GlobalStyles />
+          <Router style={{ fontFamily: selectedTheme.fonts.primary }}>
+            <Layout setter={setSelectedTheme} theme={selectedTheme} />
           </Router>
         </ThemeProvider>
       }

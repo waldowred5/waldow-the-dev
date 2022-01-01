@@ -13,12 +13,14 @@ export const useTheme = () => {
   };
 
   const getFonts = () => {
-    return _.values(_.mapValues(themes.data, 'font'));
+    const fonts = _.values(_.mapValues(themes.data, 'fonts'));
+    const fontArray = fonts.map((font) => Object.values(font)).flat();
+    return [...new Set(fontArray)];
   };
 
   useEffect(() =>{
     const localTheme = getFromLS('theme');
-    localTheme ? setTheme(localTheme) : setTheme(themes.data.seaWave);
+    localTheme ? setTheme(localTheme) : setTheme(themes.data.dark);
     setThemeLoaded(true);
   }, []);
 
