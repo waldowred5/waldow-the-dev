@@ -51,6 +51,19 @@
           "textPositionTabletRight": 124,
           "textPositionTabletTop": 124,
           "textShadow": "0 0 6px #071D3A"
+        },
+        "navBar": {
+          "backgroundColor": "#007A62",
+          "height": 90,
+          "linearGradient": "#07B8ED73, #FFFFFF00",
+          "navItem": {
+            "borderBottomActive": "4px solid #07B8ED",
+            "borderBottomHover": "4px solid #38E00080",
+            "fontColor": "#DEE2E3",
+            "fontSize": 28,
+            "linearGradientActive": "#FFFFFF00, #07B8ED59",
+            "linearGradientHover": "#FFFFFF00, #38E00033"
+          }
         }
       },
       "colors": {
@@ -133,6 +146,19 @@
           "textPositionTabletRight": 124,
           "textPositionTabletTop": 124,
           "textShadow": "0 0 6px #071D3A"
+        },
+        "navBar": {
+          "backgroundColor": "#007A62",
+          "height": 90,
+          "linearGradient": "#07B8ED73, #FFFFFF00",
+          "navItem": {
+            "borderBottomActive": "4px solid #07B8ED",
+            "borderBottomHover": "4px solid #38E00080",
+            "fontColor": "#DEE2E3",
+            "fontSize": 28,
+            "linearGradientActive": "#FFFFFF00, #07B8ED59",
+            "linearGradientHover": "#FFFFFF00, #38E00033"
+          }
         }
       },
       "colors": {

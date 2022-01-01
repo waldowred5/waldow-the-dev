@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
-import { media, SCREEN_SIZE } from 'utils/styles/layout';
+import { fontPx, media, SCREEN_SIZE } from 'utils/styles/layout';
+import { getFontFamily } from 'utils/styles/theme';
+import { FONT_FAMILY } from 'utils/constants';
+import { getNavBarStyle } from 'components/molecules/NavBar/styles';
+
+const getNavItemStyle = (propName) => ({ theme }) => {
+  const { navItem } = theme.components.navBar;
+  return navItem[propName];
+};
 
 const StyledNavItem = styled.li`
   // Display
@@ -12,19 +20,18 @@ const StyledNavItem = styled.li`
 
   .active {
     // Color
-    background: linear-gradient(#FFFFFF00, #07B8ED59);
-    // these values have transparency flags included ^
+    background: linear-gradient(${getNavItemStyle('linearGradientActive')});
 
     // Sizing
-    border-bottom: 4px solid #07B8ED;
+    border-bottom: ${getNavItemStyle('borderBottomActive')};
   }
 `;
 
 export const NavLabel = styled.p`  
   // Font
-  font-size: 28px;
-  font-family: 'Bangers', cursive;
-  color: #DEE2E3;
+  font-size: ${getNavItemStyle('fontSize')}px;
+  font-family: ${getFontFamily(FONT_FAMILY.TERTIARY)};
+  color: ${getNavItemStyle('fontColor')};
   
   // Sizing
   margin: 0;
@@ -38,19 +45,16 @@ export const NavLink = styled(LinkS)`
 
   // Sizing
   box-sizing: border-box;
-  height: 90px;
+  height: ${getNavBarStyle('height')}px;
+  width: ${fontPx(120)};
 
   ${media[SCREEN_SIZE.TABLET]} {
-    // Sizing
-    width: 120px;
-
     :not(.active)&:hover {
       // Color
-      background: linear-gradient(#FFFFFF00, #38E00033);
-      // these values have transparency flags included ^
-      
+      background: linear-gradient(${getNavItemStyle('linearGradientHover')});
+
       // Sizing
-      border-bottom: 4px solid #38E00080;
+      border-bottom: ${getNavItemStyle('borderBottomHover')};
     }
   }
 `;

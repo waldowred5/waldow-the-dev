@@ -20,7 +20,7 @@ export const useTheme = () => {
 
   useEffect(() =>{
     const localTheme = getFromLS('theme');
-    localTheme ? setTheme(localTheme) : setTheme(themes.data.sea);
+    localTheme ? setTheme(localTheme) : setTheme(themes.data.dark);
     setThemeLoaded(true);
   }, []);
 
