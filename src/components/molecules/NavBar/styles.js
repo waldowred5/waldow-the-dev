@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 export const getNavBarStyle = (propName) => ({ theme }) => {
   const { navBar } = theme.components;
@@ -20,8 +21,14 @@ export const BackgroundFilter = styled.div`
 
   // Sizing
   box-sizing: border-box;
-  height: ${getNavBarStyle('height')}px;
-  margin-top: -${getNavBarStyle('height')}px;
+  height: ${getNavBarStyle('heightMobile')}px;
+  margin-top: -${getNavBarStyle('heightMobile')}px;
+
+  ${media[SCREEN_SIZE.TABLET]} {
+    // Sizing
+    height: ${getNavBarStyle('heightTablet')}px;
+    margin-top: -${getNavBarStyle('heightTablet')}px;
+  }
 `;
 
 const StyledNavBar = styled.nav`

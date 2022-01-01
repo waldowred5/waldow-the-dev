@@ -35,15 +35,26 @@
           }
         },
         "heroText": {
-          "primaryHeadingSize": "96",
-          "primaryHeadingLineHeight": "110",
-          "primaryHeadingMargin": "0 8px 0 0",
-          "secondaryHeadingSize":  48,
-          "secondaryHeadingLineHeight": 56,
+          "dividerColor": "#CCCCCC",
+          "dividerHeight": 1,
+          "dividerMargin": "24",
+          "primaryHeadingSizeMobile": 48,
+          "primaryHeadingSizeTablet": 96,
+          "primaryHeadingLineHeightMobile": 52,
+          "primaryHeadingLineHeightTablet": 110,
+          "primaryHeadingMarginMobile": "0 2px 0 0",
+          "primaryHeadingMarginTablet": "0 8px 0 0",
+          "secondaryHeadingSizeMobile":  16,
+          "secondaryHeadingSizeTablet":  48,
+          "secondaryHeadingLineHeightMobile": 18,
+          "secondaryHeadingLineHeightTablet": 56,
           "secondaryHeadingMargin": "0 48px 0 0",
-          "suffixHeadingSize":  64,
-          "suffixHeadingLineHeight": 68,
-          "suffixHeadingMargin": "40px 0 0 0"
+          "suffixHeadingSizeMobile":  36,
+          "suffixHeadingSizeTablet":  64,
+          "suffixHeadingLineHeightMobile": 40,
+          "suffixHeadingLineHeightTablet": 68,
+          "suffixHeadingMarginMobile": "12px 0 0 0",
+          "suffixHeadingMarginTablet": "40px 0 0 0"
         },
         "logo": {
           "dropShadowMobile": "0 0 15px #007A62",
@@ -65,7 +76,8 @@
         },
         "navBar": {
           "backgroundColor": "#007A62",
-          "height": 90,
+          "heightMobile": 64,
+          "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
@@ -141,8 +153,9 @@
           }
         },
         "heroText": {
-          "primaryHeadingSize": "96",
-          "primaryHeadingLineHeight": "110",
+          "dividerColor": "#292929",
+          "primaryHeadingSizeMobile": 96,
+          "primaryHeadingLineHeightMobile": 110,
           "primaryHeadingMargin": "0 8px 0 0",
           "secondaryHeadingSize":  48,
           "secondaryHeadingLineHeight": 56,
@@ -171,7 +184,8 @@
         },
         "navBar": {
           "backgroundColor": "#007A62",
-          "height": 90,
+          "heightMobile": 64,
+          "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",

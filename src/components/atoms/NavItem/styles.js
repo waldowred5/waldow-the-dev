@@ -19,11 +19,18 @@ const StyledNavItem = styled.li`
   cursor: pointer;
 
   .active {
-    // Color
-    background: linear-gradient(${getNavItemStyle('linearGradientActive')});
+    // Display
+    display: flex;
+  }
 
-    // Sizing
-    border-bottom: ${getNavItemStyle('borderBottomActive')};
+  ${media[SCREEN_SIZE.TABLET]} {
+    .active {
+      // Color
+      background: linear-gradient(${getNavItemStyle('linearGradientActive')});
+
+      // Sizing
+      border-bottom: ${getNavItemStyle('borderBottomActive')};
+    }
   }
 `;
 
@@ -39,16 +46,27 @@ export const NavLabel = styled.p`
 
 export const NavLink = styled(LinkS)`
   // Display
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-
+  
   // Sizing
   box-sizing: border-box;
-  height: ${getNavBarStyle('height')}px;
+  height: ${getNavBarStyle('heightMobile')}px;
   width: ${fontPx(120)};
+  
+  .active {
+    // Display
+    display: flex;
+  }
 
   ${media[SCREEN_SIZE.TABLET]} {
+    // Display
+    display: flex;
+    
+    // Sizing
+    height: ${getNavBarStyle('heightTablet')}px;
+    
     :not(.active)&:hover {
       // Color
       background: linear-gradient(${getNavItemStyle('linearGradientHover')});

@@ -28,7 +28,8 @@ NavBar.propTypes = {
       shape({
         id: PropTypes.string,
         label: PropTypes.string,
-      })),
+      }),
+  ),
   setter: PropTypes.func,
   theme: PropTypes.object,
 };

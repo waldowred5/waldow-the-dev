@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { FONT_FAMILY } from 'utils/constants';
+import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 const getButtonStyle = (propName) => ({ colorVariant, theme }) => {
   return theme.colors.button[colorVariant][propName];
@@ -34,8 +35,12 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 98px;
-  right: 12px;
+  top: 72px;
+  right: 14px;
+
+  ${media[SCREEN_SIZE.TABLET]} {
+    top: 100px;
+  }
 `;
 
 export default StyledThemeButton;

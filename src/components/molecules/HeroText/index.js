@@ -1,23 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StyledHeroText, {
+import HeroContainer, {
   PrimaryHeadingWrapper,
   PrimaryHeading,
   SecondaryHeading,
+  StyledDivider,
+  StyledHeroText,
   SuffixHeading,
 } from './styles';
 
 export const HeroText = ({ theme }) => {
   return (
-    <StyledHeroText theme={theme}>
-      <PrimaryHeadingWrapper>
-        <PrimaryHeading>WALDOW</PrimaryHeading>
-        <SuffixHeading>.the.dev</SuffixHeading>
-      </PrimaryHeadingWrapper>
-      <SecondaryHeading>
+    <>
+      <HeroContainer>
+        <StyledDivider />
+        <StyledHeroText theme={theme}>
+          <PrimaryHeadingWrapper>
+            <PrimaryHeading>WALDOW</PrimaryHeading>
+            <SuffixHeading>.the.dev</SuffixHeading>
+          </PrimaryHeadingWrapper>
+          <SecondaryHeading>
         Thrill seeker by day, developer by night
-      </SecondaryHeading>
-    </StyledHeroText>
+          </SecondaryHeading>
+        </StyledHeroText>
+      </HeroContainer>
+      <div id='mobileNavSpacer' style={{ height: 64 }} />
+    </>
   );
 };
 

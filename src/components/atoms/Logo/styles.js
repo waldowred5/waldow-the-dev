@@ -11,6 +11,8 @@ const getLogoStyle = (propName) => ({ theme }) => {
 const StyledLogo = styled.div`
   // Color
   filter: drop-shadow(${getLogoStyle('dropShadowMobile')});
+  // TO:DO implement json ref pointer handler (json-schema-ref-parser?)
+  // TO:DO fix tablet - desktop breakpoint styling EVERYWHERE!
   
   // Display
   display: flex;
