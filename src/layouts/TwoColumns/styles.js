@@ -8,8 +8,8 @@ const getDividerStyle = (propName) => ({ theme }) => {
 
 const StyledTwoColumns = styled.div`
   // Display
-  //display: flex;
-  //justify-content: center;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ColumnDivider = styled.div`
@@ -26,11 +26,16 @@ export const ColumnDivider = styled.div`
   width: 100%;
 
   ${media[SCREEN_SIZE.TABLET]} {
-    // Sizing
+   // Sizing
     height: 100%;
-    //max-height: 1024px;
-    margin: 0 24px;
+    margin: 0 48px;
     width: ${getDividerStyle('dividerSize')}px;
+    
+    &::after {
+      // Position
+      position: absolute;
+      // Required for 100% ColumnDivider height
+    }
   }
 `;
 
@@ -41,7 +46,7 @@ export const ColumnWrapper = styled.div`
   flex-direction: column;
 
   // Sizing
-  margin: 48px 24px;
+  margin: 48px 24px 128px 24px;
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display
@@ -56,6 +61,7 @@ export const ColumnWrapper = styled.div`
   }
 `;
 
+// TO:DO Fix these divs
 export const PrimaryColumn = styled.div`
   // Display
   //display: block;

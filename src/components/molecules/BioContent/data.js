@@ -1,10 +1,10 @@
 export const bioContent = [
   // eslint-disable-next-line max-len
-  'FARM: Grew up on a farm then moved to the big smoke in pursuit of academia',
+  'From humble beginnings on a farm outside of Port Macquarie, I moved to Sydney in pursuit of academia.',
   // eslint-disable-next-line max-len
-  'MEDICAL SCIENCE: Maecenas eu tristique mi. Nullam eget metus et lacus porttitor rhoncus ut auctor sem. Fusce sollicitudin sapien sit amet ante pretium, ullamcorper malesuada purus placerat.',
+  'Convinced I was going to a doctor, I enrolled in a Bachelor of Medical Science, spending four years with my peers cutting open cadavers and conducting mock clinical drug trials.',
   // eslint-disable-next-line max-len
-  'SALES: Nullam ornare odio non erat dictum, sit amet ultricies neque tempor. Nulla a tortor tempus, molestie arcu vel, scelerisque diam. Praesent maximus auctor metus placerat interdum.',
+  'Eager to cut my teeth in the professional world after realising I didn\'t want to be a doctor, I started my career in sales. Working for startups, mid-sized companies and large corporate, I sold everything from charity raffle tickets and logistics contracts to medical accounting and devops software platforms.',
   // eslint-disable-next-line max-len
-  'DEV: Ut ipsum metus, gravida sit amet lobortis euismod, laoreet a elit. Nunc sed porttitor urna.',
+  'Knowing I was destined to pursue something other than software sales, I signed up for a coding boot camp and landed my dream gig as a frontend web developer six months later.',
 ];

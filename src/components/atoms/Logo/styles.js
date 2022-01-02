@@ -27,8 +27,8 @@ const StyledLogo = styled.div`
     filter: drop-shadow(${getLogoStyle('dropShadowTablet')});
 
     // Position
-    top: ${fontPx(40)};
-    left: ${fontPx(80)};
+    top: ${fontPx(20)};
+    left: ${fontPx(68)};
   }
 `;
 

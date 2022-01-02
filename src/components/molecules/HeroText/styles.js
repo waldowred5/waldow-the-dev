@@ -53,7 +53,7 @@ export const PrimaryHeading = styled.h1`
   }
 `;
 
-export const SecondaryHeading = styled.h2`
+export const SecondaryHeading = styled.h3`
   // Color
   color: ${getHeadingStyle(HEADING_VARIANT.TERTIARY, 'color')};
   

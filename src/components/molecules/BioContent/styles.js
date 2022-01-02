@@ -21,7 +21,7 @@ export const StyledParagraph = styled.p`
   color: ${getHeadingStyle(HEADING_VARIANT.PRIMARY, 'color')};  
 
   // Font
-  font-size: ${fontPx(16)};
+  font-size: ${fontPx(18)};
   text-align: center;
   
   // Sizing
