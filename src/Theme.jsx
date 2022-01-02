@@ -22,7 +22,7 @@ const Theme = ({ children }) => (
 );
 
 Theme.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.array,
 };
 
 export default Theme;

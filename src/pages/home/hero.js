@@ -1,9 +1,9 @@
 import React from 'react';
 import { HeroController } from 'controllers/Hero';
 
-const Hero = (props) => (
+const Hero = () => (
   <div id='hero'>
-    <HeroController {...props} />
+    <HeroController />
   </div>
 );
 

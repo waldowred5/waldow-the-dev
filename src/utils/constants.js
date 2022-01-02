@@ -19,4 +19,6 @@ export const HEADING_VARIANT = {
   PRIMARY: 'primary',
   SECONDARY: 'secondary',
   TERTIARY: 'tertiary',
+  NEUTRAL_LIGHT: 'neutralLight',
+  NEUTRAL_DARK: 'neutralDark',
 };

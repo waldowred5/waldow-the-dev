@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { fontPx, media, SCREEN_SIZE } from 'utils/styles/layout';
 import { FONT_FAMILY, FONT_WEIGHT, HEADING_VARIANT } from 'utils/constants';
 import { getFontFamily, getFontWeight } from 'utils/styles/theme';
@@ -8,14 +8,14 @@ const getHeadingStyle = (colorVariant, propName) => ({ theme }) => {
   return theme.components.heading[colorVariant][propName];
 };
 
-const getHeroTextStyle = (propName) => ({ theme }) => {
-  return theme.components.heroText[propName];
+const getDividerStyle = (propName) => ({ theme }) => {
+  const { divider } = theme.components;
+  return divider[propName];
 };
 
-const headingProps = {
-  colorVariant: PropTypes.string,
-  fontFamily: PropTypes.string,
-  theme: PropTypes.object,
+const getHeroTextStyle = (propName) => ({ theme }) => {
+  const { heroText } = theme.components;
+  return heroText[propName];
 };
 
 const HeroContainer = styled.div`
@@ -24,16 +24,16 @@ const HeroContainer = styled.div`
   margin: 24px;
 `;
 
-export const PrimaryHeadingWrapper = styled('div', headingProps)`
+export const PrimaryHeadingWrapper = styled.div`
   // Color
-  color: ${getHeadingStyle(HEADING_VARIANT.PRIMARY, 'color')};
+  color: ${getHeadingStyle(HEADING_VARIANT.SECONDARY, 'color')};
   
   // Display
   display: flex;
   flex-direction: row;
 `;
 
-export const PrimaryHeading = styled('h1', headingProps)`
+export const PrimaryHeading = styled.h1`
   // Font
   font-family: ${getFontFamily(FONT_FAMILY.TERTIARY)};
   font-size: ${getHeroTextStyle('primaryHeadingSizeMobile')}px;
@@ -53,9 +53,9 @@ export const PrimaryHeading = styled('h1', headingProps)`
   }
 `;
 
-export const SecondaryHeading = styled('h2', headingProps)`
+export const SecondaryHeading = styled.h2`
   // Color
-  color: ${getHeadingStyle(HEADING_VARIANT.SECONDARY, 'color')};
+  color: ${getHeadingStyle(HEADING_VARIANT.TERTIARY, 'color')};
   
   // Font
   font-size: ${getHeroTextStyle('secondaryHeadingSizeMobile')}px;
@@ -78,14 +78,15 @@ export const SecondaryHeading = styled('h2', headingProps)`
 
 export const StyledDivider = styled.div`
   // Color
-  background: ${getHeroTextStyle('dividerColor')};
+  background: ${getDividerStyle('dividerColor')};
   
   // Display
   display: flex;
   
   // Sizing
-  height: ${getHeroTextStyle('dividerHeight')}px;
+  height: ${getDividerStyle('dividerSize')}px;
   margin-bottom: ${getHeroTextStyle('dividerMargin')}px;
+  // TO:DO add this component to a layout then move this to divider config
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display
@@ -113,7 +114,7 @@ export const StyledHeroText = styled.div`
   }
 `;
 
-export const SuffixHeading = styled('h1', headingProps)`
+export const SuffixHeading = styled.h1`
   // Font
   font-family: '${getFontFamily(FONT_FAMILY.SECONDARY)}', cursive;
   font-size: ${getHeroTextStyle('suffixHeadingSizeMobile')}px;

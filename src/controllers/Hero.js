@@ -3,10 +3,10 @@ import React from 'react';
 import { HeroText } from 'components/molecules/HeroText';
 import { AnimationCanvasHero } from 'components/atoms/AnimationCanvasHero';
 
-export const HeroController = (props) => (
+export const HeroController = () => (
   <>
     {/* <CubeAnimation />*/}
     <AnimationCanvasHero />
-    <HeroText {...props} />
+    <HeroText />
   </>
 );

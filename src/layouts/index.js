@@ -10,7 +10,8 @@ const Layout = (props) => {
   return (
     <>
       <NavBarController {...props} />
-      <Hero {...props} />
+      <Hero />
+      {/* <Hero {...props} />*/}
       <About />
       <Projects />
       <Blog />

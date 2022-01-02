@@ -104,10 +104,10 @@ export const TextWrapper = styled.div`
   // Position
   position: absolute;
   right: calc(
-    ${getLogoStyle('textPositionMobileRight')} * 0.25px
+    ${getLogoStyle('textPositionMobileRight')} * 0.33px
   );
   top: calc(
-    ${getLogoStyle('textPositionMobileTop')} * 0.13px
+    ${getLogoStyle('textPositionMobileTop')} * 0.16px
   );
 
   // Shape
@@ -130,7 +130,7 @@ export const MobilePrimaryHeading = styled.h1`
   display: block;
 
   // Font
-  font-size: ${fontPx(74)};
+  font-size: ${fontPx(48)};
   font-family: ${getFontFamily(FONT_FAMILY.TERTIARY)};
   font-weight: ${getFontWeight(FONT_WEIGHT.REGULAR)};
 
