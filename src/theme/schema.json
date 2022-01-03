@@ -23,20 +23,28 @@
         "neutral900": "#E0E0E0"
       },
       "components": {
+        "divider": {
+          "dividerColor": "#CCCCCC",
+          "dividerSize": 1
+        },
         "heading": {
           "primary": {
-            "color": "#38E000"
+            "color": "#07B8ED"
           },
           "secondary": {
-            "color": "#C56CEF"
+            "color": "#38E000"
           },
           "tertiary": {
+            "color": "#C56CEF"
+          },
+          "neutralLight": {
             "color": "#E0E0E0"
+          },
+          "neutralDark": {
+            "color": "#141414"
           }
         },
         "heroText": {
-          "dividerColor": "#CCCCCC",
-          "dividerHeight": 1,
           "dividerMargin": "24",
           "primaryHeadingSizeMobile": 48,
           "primaryHeadingSizeTablet": 96,
@@ -61,15 +69,15 @@
           "dropShadowTablet": "0 0 20px #007A62",
           "innerContainerColor": "#07B8ED",
           "innerContainerMargin": 5,
-          "innerContainerRadiusMobile": 84,
+          "innerContainerRadiusMobile": 60,
           "innerContainerRadiusTablet": 104,
           "outerContainerColor": "#C56CEF",
-          "outerContainerRadiusMobile": 100,
+          "outerContainerRadiusMobile": 70,
           "outerContainerRadiusTablet": 124,
           "primaryHeadingMarginTablet": "0 14px 0 0",
           "textColor": "#38E000",
-          "textPositionMobileRight": 124,
-          "textPositionMobileTop": 124,
+          "textPositionMobileRight": 70,
+          "textPositionMobileTop": 70,
           "textPositionTabletRight": 124,
           "textPositionTabletTop": 124,
           "textShadow": "0 0 6px #071D3A"
@@ -87,6 +95,11 @@
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
             "linearGradientHover": "#FFFFFF00, #38E00033"
           }
+        },
+        "pageHeader": {
+          "fontColor": "#DEE2E3",
+          "fontSize": 28,
+          "linearGradient": "#07B8ED73, #FFFFFF00"
         }
       },
       "colors": {
@@ -121,7 +134,7 @@
     "sea" : {
       "id": "T_002",
       "name": "Sea",
-      "body": "red",
+      "body": "darkorange",
       "colorPalette": {
         "primaryBright": "#07B8ED",
         "primaryDark": "red",
@@ -141,43 +154,61 @@
         "neutral900": "#E0E0E0"
       },
       "components": {
+        "divider": {
+          "dividerColor": "#CCCCCC",
+          "dividerSize": 1
+        },
         "heading": {
           "primary": {
-            "color": "#38E000"
+            "color": "#07B8ED"
           },
           "secondary": {
-            "color": "#C56CEF"
+            "color": "#38E000"
           },
           "tertiary": {
+            "color": "#C56CEF"
+          },
+          "neutralLight": {
             "color": "#E0E0E0"
+          },
+          "neutralDark": {
+            "color": "#141414"
           }
         },
         "heroText": {
-          "dividerColor": "#292929",
-          "primaryHeadingSizeMobile": 96,
-          "primaryHeadingLineHeightMobile": 110,
-          "primaryHeadingMargin": "0 8px 0 0",
-          "secondaryHeadingSize":  48,
-          "secondaryHeadingLineHeight": 56,
+          "dividerMargin": "24",
+          "primaryHeadingSizeMobile": 48,
+          "primaryHeadingSizeTablet": 96,
+          "primaryHeadingLineHeightMobile": 52,
+          "primaryHeadingLineHeightTablet": 110,
+          "primaryHeadingMarginMobile": "0 2px 0 0",
+          "primaryHeadingMarginTablet": "0 8px 0 0",
+          "secondaryHeadingSizeMobile":  16,
+          "secondaryHeadingSizeTablet":  48,
+          "secondaryHeadingLineHeightMobile": 18,
+          "secondaryHeadingLineHeightTablet": 56,
           "secondaryHeadingMargin": "0 48px 0 0",
-          "suffixHeadingSize":  64,
-          "suffixHeadingLineHeight": 68,
-          "suffixHeadingMargin": "40px 0 0 0"
+          "suffixHeadingSizeMobile":  36,
+          "suffixHeadingSizeTablet":  64,
+          "suffixHeadingLineHeightMobile": 40,
+          "suffixHeadingLineHeightTablet": 68,
+          "suffixHeadingMarginMobile": "12px 0 0 0",
+          "suffixHeadingMarginTablet": "40px 0 0 0"
         },
         "logo": {
           "dropShadowMobile": "0 0 15px #007A62",
           "dropShadowTablet": "0 0 20px #007A62",
           "innerContainerColor": "#07B8ED",
           "innerContainerMargin": 5,
-          "innerContainerRadiusMobile": 84,
+          "innerContainerRadiusMobile": 60,
           "innerContainerRadiusTablet": 104,
           "outerContainerColor": "#C56CEF",
-          "outerContainerRadiusMobile": 100,
+          "outerContainerRadiusMobile": 70,
           "outerContainerRadiusTablet": 124,
           "primaryHeadingMarginTablet": "0 14px 0 0",
           "textColor": "#38E000",
-          "textPositionMobileRight": 124,
-          "textPositionMobileTop": 124,
+          "textPositionMobileRight": 70,
+          "textPositionMobileTop": 70,
           "textPositionTabletRight": 124,
           "textPositionTabletTop": 124,
           "textShadow": "0 0 6px #071D3A"
@@ -195,6 +226,11 @@
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
             "linearGradientHover": "#FFFFFF00, #38E00033"
           }
+        },
+        "pageHeader": {
+          "fontColor": "#DEE2E3",
+          "fontSize": 28,
+          "linearGradient": "#07B8ED73, #FFFFFF00"
         }
       },
       "colors": {

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import HeroContainer, {
   PrimaryHeadingWrapper,
   PrimaryHeading,
@@ -9,12 +8,12 @@ import HeroContainer, {
   SuffixHeading,
 } from './styles';
 
-export const HeroText = ({ theme }) => {
+export const HeroText = () => {
   return (
     <>
       <HeroContainer>
         <StyledDivider />
-        <StyledHeroText theme={theme}>
+        <StyledHeroText>
           <PrimaryHeadingWrapper>
             <PrimaryHeading>WALDOW</PrimaryHeading>
             <SuffixHeading>.the.dev</SuffixHeading>
@@ -27,10 +26,4 @@ export const HeroText = ({ theme }) => {
       <div id='mobileNavSpacer' style={{ height: 64 }} />
     </>
   );
-};
-
-HeroText.propTypes = {
-  colorVariant: PropTypes.string,
-  fontFamily: PropTypes.string,
-  theme: PropTypes.object,
 };

@@ -1,11 +1,10 @@
 import React from 'react';
+import { AboutController } from 'controllers/About';
 
-const About = () => (
-  <>
-    <div id='about'
-      style={{ height: '100vh', background: 'red' }}>
-        About</div>
-  </>
+const About = (props) => (
+  <div id='about'>
+    <AboutController {...props} />
+  </div>
 );
 
 export default About;
