@@ -131,9 +131,9 @@
         "bold": 700
       }
     },
-    "sea" : {
+    "wip" : {
       "id": "T_002",
-      "name": "Sea",
+      "name": "WIP",
       "body": "darkorange",
       "colorPalette": {
         "primaryBright": "#07B8ED",

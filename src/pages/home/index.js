@@ -1,13 +1,13 @@
-import hero from './hero';
-import about from './about';
-import projects from './projects';
-import blog from './blog';
-import contact from './contact';
+import Hero from './Hero';
+import About from './About';
+import Projects from './Projects';
+import Blog from './Blog';
+import Contact from './Contact';
 
 export default [
-  hero,
-  about,
-  projects,
-  blog,
-  contact,
+  Hero,
+  About,
+  Projects,
+  Blog,
+  Contact,
 ];

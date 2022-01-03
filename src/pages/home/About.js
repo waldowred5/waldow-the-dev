@@ -1,9 +1,9 @@
 import React from 'react';
 import { AboutController } from 'controllers/About';
 
-const About = (props) => (
+const About = () => (
   <div id='about'>
-    <AboutController {...props} />
+    <AboutController />
   </div>
 );
 

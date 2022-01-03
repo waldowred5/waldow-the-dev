@@ -1,4 +1,4 @@
-import Hero from 'pages/home/hero';
+import Hero from 'pages/home/Hero';
 
 export default {
   id: 'hero',

@@ -1,4 +1,4 @@
-import Blog from 'pages/home/blog';
+import Blog from 'pages/home/Blog';
 
 export default {
   id: 'blog',

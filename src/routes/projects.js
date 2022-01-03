@@ -1,4 +1,4 @@
-import Projects from 'pages/home/projects';
+import Projects from 'pages/home/Projects';
 
 export default {
   id: 'projects',
