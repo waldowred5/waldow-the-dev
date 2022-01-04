@@ -1,5 +1,6 @@
 import React from 'react';
-import BackgroundFilter, {
+import {
+  BackgroundFilter,
   BackgroundFilterMobile,
   LogoLinkWrapper,
   NavMenu,

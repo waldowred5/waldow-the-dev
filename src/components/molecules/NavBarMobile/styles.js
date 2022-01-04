@@ -8,7 +8,7 @@ export const getNavBarStyle = (propName) => ({ theme }) => {
 
 // TO:DO Change/remove tablet styling
 
-const BackgroundFilter = styled.div`
+export const BackgroundFilter = styled.div`
   // Color
   background: ${getNavBarStyle('backgroundColor')};
 
@@ -51,13 +51,14 @@ export const BackgroundFilterMobile = styled.div`
   justify-content: center;
 
   // Position
-  position: sticky;
-  top: calc(100vh - 64px);
+  position: fixed;
+  bottom: 0;
   z-index: 10;
 
   // Sizing
   box-sizing: border-box;
   height: ${getNavBarStyle('heightMobile')}px;
+  width: 100vw;
 `;
 
 export const NavMenu = styled.ul`
@@ -83,5 +84,3 @@ export const NavMenuMobile = styled.ul`
   max-width: 280px;
   width: 60vw;
 `;
-
-export default BackgroundFilter;
