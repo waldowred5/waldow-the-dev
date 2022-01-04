@@ -3,7 +3,7 @@ import { ContactController } from 'controllers/Contact';
 
 const Contact = () => (
   <>
-    <div id='contact' style={{ height: '100vh' }}>
+    <div id='contact'>
       <ContactController />
     </div>
   </>

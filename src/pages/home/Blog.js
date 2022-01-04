@@ -3,7 +3,7 @@ import { BlogController } from 'controllers/Blog';
 
 const Blog = () => (
   <>
-    <div id='blog' style={{ height: '100vh' }}>
+    <div id='blog'>
       <BlogController />
     </div>
   </>

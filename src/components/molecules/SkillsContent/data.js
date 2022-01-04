@@ -1,6 +1,6 @@
 import { FaCss3Alt, FaHtml5, FaReact, FaUnity, FaVuejs } from 'react-icons/fa';
 import {
-  SiCsharp,
+  // SiCsharp,
   SiJavascript,
   SiMongodb,
   SiPostgresql,
@@ -8,6 +8,7 @@ import {
   SiStyledcomponents,
 } from 'react-icons/si';
 import { GoRuby } from 'react-icons/go';
+import Csharp from 'assets/img/logos/CsharpLogo.svg';
 
 const React = () => <FaReact />;
 const Vue = () => <FaVuejs />; // TO:DO Swap this for IO icon
@@ -16,7 +17,9 @@ const Css = () => <FaCss3Alt />;
 const Javascript = () => <SiJavascript />; // TO:DO Swap this for IO icon
 const Ruby = () => <GoRuby />;
 const Unity = () => <FaUnity />;
-const CSharp = () => <SiCsharp />;
+// const CSharp = () => <SiCsharp />;
+const CSharpSvg = () =>
+  <img src={Csharp} alt='C# Logo' style={{ width: skillsContent.iconSize }} />;
 const StyledComponents = () => <SiStyledcomponents />;
 const Storybook = () => <SiStorybook />;
 const Postgresql = () => <SiPostgresql />;
@@ -30,7 +33,8 @@ export const iconComponentMap = {
   Javascript,
   Ruby,
   Unity,
-  CSharp,
+  // CSharp,
+  CSharpSvg,
   StyledComponents,
   Storybook,
   Postgresql,
@@ -44,7 +48,8 @@ export const skillsContent = {
       { component: 'React', color: '#00CDFE', label: 'React' },
       { component: 'Html', color: '#D84925', label: 'HTML' },
       { component: 'Javascript', color: '#EBD51D', label: 'JavaScript' },
-      { component: 'CSharp', color: '#9970D3', label: 'C#' },
+      // { component: 'CSharp', color: '#9970D3', label: 'C#' },
+      { component: 'CSharpSvg', color: '', label: 'C#' },
       // eslint-disable-next-line max-len
       { component: 'StyledComponents', color: '#EBD51D', label: 'Styled Components' },
       { component: 'Postgresql', color: '#FFFFFF', label: 'PostgreSQL' },
