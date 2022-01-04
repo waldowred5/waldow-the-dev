@@ -30,6 +30,10 @@ export const IconContainer = styled.div`
 `;
 
 export const IconLabel = styled.h5`
+  // Display
+  align-items: center;
+  display: flex;
+
   // Color
   color: ${getHeadingStyle(HEADING_VARIANT.TERTIARY, 'color')};
   
@@ -57,6 +61,23 @@ export const IconWrapper = styled.div`
   // Sizing
   height: 82px;
   width: 82px;
+`;
+
+export const IconWrapperLink = styled.a`
+  // Display
+  display: flex;
+  
+  // Color
+  background: #C56CEF4D; // TO:DO set as TertiaryBright in thema
+  box-shadow: 0 0 8px 8px #C56CEF4D; // TO:DO set as TertiaryBright in thema
+  
+  // Position
+  position: relative;
+  top: 110px;
+  right: -52px;
+  
+  // Shape
+  border-radius: 100%;
 `;
 
 export const StyledColumn = styled.div`

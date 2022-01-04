@@ -57,7 +57,7 @@ export const BackgroundFilterMobile = styled.div`
 
   // Sizing
   box-sizing: border-box;
-  height: ${getNavBarStyle('heightMobile')}px;
+  height: calc(${getNavBarStyle('heightMobile')}px * 1.34);
   width: 100vw;
 `;
 
@@ -79,7 +79,7 @@ export const NavMenuMobile = styled.ul`
   
   // Sizing
   padding: 0;
-  margin-top: 8px;
+  margin-top: 22px;
   margin-bottom: 0;
   max-width: 280px;
   width: 60vw;

@@ -2,24 +2,39 @@ import React from 'react';
 import StyledSkillsContent, {
   IconContainer,
   IconLabel,
-  IconWrapper,
+  IconWrapper, IconWrapperLink,
   StyledColumn,
 } from './styles';
 import { IconContext } from 'react-icons';
 import { iconComponentMap, skillsContent } from './data';
 import PropTypes from 'prop-types';
+import { GoLinkExternal } from 'react-icons/go';
 
 const IconComponent = ({ column }) => {
   return (
     <>
-      {skillsContent.icon[column].map(({ component, color, label }) => {
+      {skillsContent.icon[column].map(({
+        component,
+        color,
+        externalLink,
+        label,
+        size,
+      }) => {
         const Component = iconComponentMap[component];
         return (
           <IconContainer key={label}>
+            <IconWrapperLink href={externalLink} target='_blank'>
+              <IconContext.Provider
+                key={label}
+                value={{ color, size: skillsContent.externalLinkIconSize }}
+              >
+                <GoLinkExternal key={label} />
+              </IconContext.Provider>
+            </IconWrapperLink>
             <IconWrapper>
               <IconContext.Provider
                 key={label}
-                value={{ color, size: skillsContent.iconSize }}
+                value={{ color, size }}
               >
                 <Component key={label} />
               </IconContext.Provider>

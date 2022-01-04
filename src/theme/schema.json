@@ -97,8 +97,8 @@
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
             "linearGradientHover": "#FFFFFF00, #38E00033",
             "mobileBorderRadius": 2,
-            "mobileHeight": 14,
-            "mobileWidth": 14
+            "mobileHeight": 16,
+            "mobileWidth": 16
           }
         },
         "pageHeader": {
