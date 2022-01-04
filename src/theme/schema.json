@@ -87,7 +87,7 @@
           "heightMobile": 64,
           "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
-          "linearGradientMobile": "0deg, #071D3A 75%, transparent",
+          "linearGradientMobile": "0deg, #071D3A 75%, #071D3A00",
           "widthTablet": 120,
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
@@ -223,7 +223,7 @@
           "heightMobile": 64,
           "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
-          "linearGradientMobile": "0deg, #071D3A 75%, transparent",
+          "linearGradientMobile": "0deg, #071D3A 75%, #071D3A00",
           "widthTablet": 120,
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
