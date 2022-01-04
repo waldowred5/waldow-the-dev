@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from 'pages/home/hero';
-import About from 'pages/home/about';
-import Projects from 'pages/home/projects';
-import Blog from 'pages/home/blog';
-import Contact from 'pages/home/contact';
+import Hero from 'pages/home/Hero';
+import About from 'pages/home/About';
+import Projects from 'pages/home/Projects';
+import Blog from 'pages/home/Blog';
+import Contact from 'pages/home/Contact';
 import { NavBarController } from 'controllers/NavBar';
 
 const Layout = (props) => {
@@ -11,7 +11,6 @@ const Layout = (props) => {
     <>
       <NavBarController {...props} />
       <Hero />
-      {/* <Hero {...props} />*/}
       <About />
       <Projects />
       <Blog />

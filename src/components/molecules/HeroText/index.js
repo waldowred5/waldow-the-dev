@@ -23,7 +23,6 @@ export const HeroText = () => {
           </SecondaryHeading>
         </StyledHeroText>
       </HeroContainer>
-      <div id='mobileNavSpacer' style={{ height: 64 }} />
     </>
   );
 };

@@ -21,7 +21,7 @@ const getHeroTextStyle = (propName) => ({ theme }) => {
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 24px;
+  margin: 24px 24px 88px 24px;
 `;
 
 export const PrimaryHeadingWrapper = styled.div`
@@ -101,7 +101,7 @@ export const StyledHeroText = styled.div`
   flex-direction: column;
   
   // Sizing
-  margin-bottom: 24px;
+  //margin-bottom: 24px;
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display

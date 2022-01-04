@@ -87,13 +87,18 @@
           "heightMobile": 64,
           "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
+          "linearGradientMobile": "0deg, #071D3A 75%, transparent",
+          "widthTablet": 120,
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
             "borderBottomHover": "4px solid #38E00080",
             "fontColor": "#DEE2E3",
             "fontSize": 28,
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
-            "linearGradientHover": "#FFFFFF00, #38E00033"
+            "linearGradientHover": "#FFFFFF00, #38E00033",
+            "mobileBorderRadius": 2,
+            "mobileHeight": 14,
+            "mobileWidth": 14
           }
         },
         "pageHeader": {
@@ -131,9 +136,9 @@
         "bold": 700
       }
     },
-    "sea" : {
+    "wip" : {
       "id": "T_002",
-      "name": "Sea",
+      "name": "WIP",
       "body": "darkorange",
       "colorPalette": {
         "primaryBright": "#07B8ED",
@@ -218,13 +223,18 @@
           "heightMobile": 64,
           "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
+          "linearGradientMobile": "0deg, #071D3A 75%, transparent",
+          "widthTablet": 120,
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
             "borderBottomHover": "4px solid #38E00080",
             "fontColor": "#DEE2E3",
             "fontSize": 28,
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
-            "linearGradientHover": "#FFFFFF00, #38E00033"
+            "linearGradientHover": "#FFFFFF00, #38E00033",
+            "mobileBorderRadius": 2,
+            "mobileHeight": 14,
+            "mobileWidth": 14
           }
         },
         "pageHeader": {
