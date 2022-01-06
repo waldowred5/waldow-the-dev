@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     // color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.fonts.primary};
-    transition: all 0.50s linear;
+    //transition: all 0.50s ease-in-out;
   }
 
   // a {

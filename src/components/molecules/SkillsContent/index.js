@@ -1,16 +1,22 @@
 import React from 'react';
 import StyledSkillsContent, { StyledColumn } from './styles';
-import { iconComponentMap } from './data';
+import { skillsContent } from './data';
 import { IconComponent } from 'components/atoms/IconComponent';
 
 export const SkillsContent = () => {
   return (
     <StyledSkillsContent>
       <StyledColumn>
-        <IconComponent group='primary' iconComponentMap={iconComponentMap} />
+        <IconComponent
+          content={skillsContent}
+          group='primary'
+        />
       </StyledColumn>
       <StyledColumn>
-        <IconComponent group='secondary' iconComponentMap={iconComponentMap} />
+        <IconComponent
+          content={skillsContent}
+          group='secondary'
+        />
       </StyledColumn>
     </StyledSkillsContent>
   );

@@ -1,71 +1,122 @@
 import React from 'react';
-import { skillsContent } from 'components/molecules/SkillsContent/data';
 import StyledIconComponent, {
+  CustomIcon,
+  CustomSvg,
   IconLabel,
   StyledIconContainer,
   StyledLink,
 } from './styles';
-import { IconContext } from 'react-icons';
 import PropTypes from 'prop-types';
 
-const IconContainer = ({ color, component, iconComponentMap, size }) => {
-  const Component = iconComponentMap[component];
+const IconContainer = (
+    {
+      color,
+      colorWrapper,
+      hasLink,
+      icon,
+      iconFamily,
+      shadowSize = 18,
+      size,
+      sizeWrapper,
+      svgRef = '',
+    }) => {
   return (
-    <StyledIconContainer>
-      <IconContext.Provider
-        key={component}
-        value={{ color, size }}
-      >
-        <Component key={component} />
-      </IconContext.Provider>
+    <StyledIconContainer
+      colorWrapper={colorWrapper}
+      hasLink={hasLink}
+      sizeWrapper={sizeWrapper}
+      shadowSize={shadowSize}
+    >
+      {
+        svgRef ?
+          <CustomSvg
+            color={color}
+            hasLink={hasLink}
+            svgRef={svgRef}
+          /> :
+          <CustomIcon
+            color={color}
+            hasLink={hasLink}
+            icon={icon}
+            iconFamily={iconFamily}
+            size={size}
+          />
+      }
     </StyledIconContainer>
   );
 };
 
 IconContainer.propTypes = {
   color: PropTypes.string,
-  component: PropTypes.string,
-  iconComponentMap: PropTypes.object,
-  size: PropTypes.string,
+  colorWrapper: PropTypes.string,
+  hasLink: PropTypes.bool,
+  icon: PropTypes.string,
+  iconFamily: PropTypes.string,
+  sizeWrapper: PropTypes.number,
+  shadowSize: PropTypes.number,
+  size: PropTypes.number,
+  svgRef: PropTypes.string,
 };
 
-export const IconComponent = ({ group, iconComponentMap }) => {
+export const IconComponent = ({ content, group }) => {
   return (
     <>
-      {skillsContent.icon[group].map(({
-        component, color, label = '', link = '', size,
-      }) => {
-        return (
-          <StyledIconComponent key={component}>
-            {
-              link ?
-                <StyledLink href={link} target='_blank'>
-                  <IconContainer
-                    color={color}
-                    component={component}
-                    iconComponentMap={iconComponentMap}
-                    size={size}
-                  />
-                </StyledLink> :
+      {
+        content[group].map(({
+          color = '',
+          colorWrapper = '',
+          icon = '',
+          iconFamily = '',
+          sizeWrapper = 82,
+          label = '',
+          link = '',
+          shadowSize = 18,
+          size = 0,
+          svgRef = '',
+        }) => {
+          return (
+            <StyledIconComponent key={icon}>
+              {
+                link ?
+                  <StyledLink
+                    href={link}
+                    shadowSize={shadowSize}
+                    target='_blank'
+                  >
+                    <IconContainer
+                      color={color}
+                      colorWrapper={colorWrapper}
+                      hasLink={!!link}
+                      icon={icon}
+                      iconFamily={iconFamily}
+                      sizeWrapper={sizeWrapper}
+                      shadowSize={shadowSize}
+                      size={size}
+                      svgRef={svgRef}
+                    />
+                  </StyledLink> :
                 <IconContainer
                   color={color}
-                  component={component}
-                  iconComponentMap={iconComponentMap}
+                  colorWrapper={colorWrapper}
+                  hasLink={!!link}
+                  icon={icon}
+                  iconFamily={iconFamily}
+                  sizeWrapper={sizeWrapper}
+                  shadowSize={shadowSize}
                   size={size}
+                  svgRef={svgRef}
                 />
-            }
-            {label ?
-              <IconLabel>{label}</IconLabel> :
-              null
-            }
-          </StyledIconComponent>
-        );
-      })}
+              }
+              {label && <IconLabel>{label}</IconLabel>}
+            </StyledIconComponent>
+          );
+        })
+      }
     </>
   );
 };
 
 IconComponent.propTypes = {
-  group: PropTypes.string,
-  iconComponentMap: PropTypes.object,
+  content: PropTypes.object,
+  group: PropTypes.string.isRequired,
 };

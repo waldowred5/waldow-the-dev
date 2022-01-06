@@ -92,7 +92,7 @@
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
             "borderBottomHover": "4px solid #38E00080",
-            "fontColor": "#DEE2E3",
+            "fontColor": "#E0E0E0",
             "fontSize": 28,
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
             "linearGradientHover": "#FFFFFF00, #38E00033",
@@ -102,7 +102,7 @@
           }
         },
         "pageHeader": {
-          "fontColor": "#DEE2E3",
+          "fontColor": "#E0E0E0",
           "fontSize": 28,
           "linearGradient": "#07B8ED73, #FFFFFF00"
         }
@@ -117,7 +117,7 @@
           },
           "secondary": {
             "text": "#071D3A",
-            "background": "#38E000"
+            "background": "#07B8ED"
           }
         },
         "link": {
@@ -136,13 +136,13 @@
         "bold": 700
       }
     },
-    "wip" : {
+    "light" : {
       "id": "T_002",
-      "name": "WIP",
-      "body": "darkorange",
+      "name": "Light",
+      "body": "#0D376D",
       "colorPalette": {
         "primaryBright": "#07B8ED",
-        "primaryDark": "red",
+        "primaryDark": "#071D3A",
         "secondaryBright": "#38E000",
         "secondaryDark": "#007A62",
         "tertiaryBright": "#C56CEF",
@@ -223,48 +223,48 @@
           "heightMobile": 64,
           "heightTablet": 90,
           "linearGradient": "#07B8ED73, #FFFFFF00",
-          "linearGradientMobile": "0deg, #071D3A 75%, #071D3A00",
+          "linearGradientMobile": "0deg, #0D376D 75%, #0D376D00",
           "widthTablet": 120,
           "navItem": {
             "borderBottomActive": "4px solid #07B8ED",
             "borderBottomHover": "4px solid #38E00080",
-            "fontColor": "#DEE2E3",
+            "fontColor": "#E0E0E0",
             "fontSize": 28,
             "linearGradientActive": "#FFFFFF00, #07B8ED59",
             "linearGradientHover": "#FFFFFF00, #38E00033",
             "mobileBorderRadius": 2,
-            "mobileHeight": 14,
-            "mobileWidth": 14
+            "mobileHeight": 16,
+            "mobileWidth": 16
           }
         },
         "pageHeader": {
-          "fontColor": "#DEE2E3",
+          "fontColor": "#E0E0E0",
           "fontSize": 28,
           "linearGradient": "#07B8ED73, #FFFFFF00"
         }
       },
       "colors": {
-        "body": "#9be7ff",
-        "text": "#0d47a1",
+        "body": "#071D3A",
+        "text": "#000000",
         "button": {
           "primary": {
-            "text": "#ffffff",
-            "background": "red"
+            "text": "#FFFFFF",
+            "background": "#071D3A"
           },
           "secondary": {
-            "text": "black",
-            "background": "red"
+            "text": "#071D3A",
+            "background": "#38E000"
           }
         },
         "link": {
-          "text": "#0d47a1",
-          "opacity": 0.8
+          "text": "teal",
+          "opacity": 1
         }
       },
       "fonts": {
-        "primary": "Monserrat",
-        "secondary": "Monserrat",
-        "tertiary": "Roboto"
+        "primary": "Roboto",
+        "secondary": "Baloo 2",
+        "tertiary": "Bangers"
       },
       "fontWeights": {
         "regular": 400,

@@ -1,13 +1,29 @@
 import React from 'react';
-import StyledSocialLinks from './styles';
-import { SocialLink } from 'components/atoms/SocialLink';
+import StyledSocialLinks, { MiddleRow, StyledRow } from './styles';
+import { IconComponent } from 'components/atoms/IconComponent';
+import { socialLinksContent } from './data';
 
 export const SocialLinks = () => {
   return (
     <StyledSocialLinks>
-      <SocialLink>
-        <></>
-      </SocialLink>
+      <StyledRow>
+        <IconComponent
+          content={socialLinksContent}
+          group='top'
+        />
+      </StyledRow>
+      <MiddleRow>
+        <IconComponent
+          content={socialLinksContent}
+          group='middle'
+        />
+      </MiddleRow>
+      <StyledRow>
+        <IconComponent
+          content={socialLinksContent}
+          group='bottom'
+        />
+      </StyledRow>
     </StyledSocialLinks>
   );
 };

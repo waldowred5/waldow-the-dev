@@ -20,7 +20,7 @@ const SiteConstructionContent = styled.div`
 
 export const StyledHeading = styled.h3`
   // Color
-  color: #DEE2E3;
+  color: #E0E0E0;
   
   // Font
   font-size: ${fontPx(48)};
