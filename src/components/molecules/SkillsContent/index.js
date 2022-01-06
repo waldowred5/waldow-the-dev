@@ -1,49 +1,22 @@
 import React from 'react';
-import StyledSkillsContent, {
-  IconContainer,
-  IconLabel,
-  IconWrapper,
-  StyledColumn,
-} from './styles';
-import { IconContext } from 'react-icons';
-import { iconComponentMap, skillsContent } from './data';
-import PropTypes from 'prop-types';
-
-const IconComponent = ({ column }) => {
-  return (
-    <>
-      {skillsContent.icon[column].map(({ component, color, label }) => {
-        const Component = iconComponentMap[component];
-        return (
-          <IconContainer key={label}>
-            <IconWrapper>
-              <IconContext.Provider
-                key={label}
-                value={{ color, size: skillsContent.iconSize }}
-              >
-                <Component key={label} />
-              </IconContext.Provider>
-            </IconWrapper>
-            <IconLabel>{label}</IconLabel>
-          </IconContainer>
-        );
-      })}
-    </>
-  );
-};
-
-IconComponent.propTypes = {
-  column: PropTypes.string,
-};
+import StyledSkillsContent, { StyledColumn } from './styles';
+import { skillsContent } from './data';
+import { IconComponent } from 'components/atoms/IconComponent';
 
 export const SkillsContent = () => {
   return (
     <StyledSkillsContent>
       <StyledColumn>
-        <IconComponent column='primary' />
+        <IconComponent
+          content={skillsContent}
+          group='primary'
+        />
       </StyledColumn>
       <StyledColumn>
-        <IconComponent column='secondary' />
+        <IconComponent
+          content={skillsContent}
+          group='secondary'
+        />
       </StyledColumn>
     </StyledSkillsContent>
   );

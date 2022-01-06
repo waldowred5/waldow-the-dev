@@ -1,61 +1,115 @@
-import { FaCss3Alt, FaHtml5, FaReact, FaUnity, FaVuejs } from 'react-icons/fa';
-import {
-  SiCsharp,
-  SiJavascript,
-  SiMongodb,
-  SiPostgresql,
-  SiStorybook,
-  SiStyledcomponents,
-} from 'react-icons/si';
-import { GoRuby } from 'react-icons/go';
-
-const React = () => <FaReact />;
-const Vue = () => <FaVuejs />; // TO:DO Swap this for IO icon
-const Html = () => <FaHtml5 />;
-const Css = () => <FaCss3Alt />;
-const Javascript = () => <SiJavascript />; // TO:DO Swap this for IO icon
-const Ruby = () => <GoRuby />;
-const Unity = () => <FaUnity />;
-const CSharp = () => <SiCsharp />;
-const StyledComponents = () => <SiStyledcomponents />;
-const Storybook = () => <SiStorybook />;
-const Postgresql = () => <SiPostgresql />;
-const MongoDb = () => <SiMongodb />;
-
-export const iconComponentMap = {
-  React,
-  Vue,
-  Html,
-  Css,
-  Javascript,
-  Ruby,
-  Unity,
-  CSharp,
-  StyledComponents,
-  Storybook,
-  Postgresql,
-  MongoDb,
-};
-
 export const skillsContent = {
-  iconSize: '70px',
-  icon: {
-    primary: [
-      { component: 'React', color: '#00CDFE', label: 'React' },
-      { component: 'Html', color: '#D84925', label: 'HTML' },
-      { component: 'Javascript', color: '#EBD51D', label: 'JavaScript' },
-      { component: 'CSharp', color: '#9970D3', label: 'C#' },
-      // eslint-disable-next-line max-len
-      { component: 'StyledComponents', color: '#EBD51D', label: 'Styled Components' },
-      { component: 'Postgresql', color: '#FFFFFF', label: 'PostgreSQL' },
-    ],
-    secondary: [
-      { component: 'Vue', color: '#3CAF7C', label: 'Vue' },
-      { component: 'Css', color: '#2449D9', label: 'CSS' },
-      { component: 'Storybook', color: '#F2437E', label: 'Storybook' },
-      { component: 'Unity', color: '#FFFFFF', label: 'Unity' },
-      { component: 'Ruby', color: '#E11420', label: 'Ruby on Rails' },
-      { component: 'MongoDb', color: '#00E161', label: 'MongoDB' },
-    ],
-  },
+  primary: [
+    {
+      color: '#00CDFE',
+      icon: 'FaReact',
+      iconFamily: 'Fa',
+      label: 'React',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#D84925',
+      icon: 'FaHtml5',
+      iconFamily: 'Fa',
+      label: 'HTML',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#EBD51D',
+      icon: 'SiJavascript',
+      iconFamily: 'Si',
+      label: 'JavaScript',
+      shadowSize: 18,
+      size: 64,
+      sizeWrapper: 82,
+    },
+    {
+      color: '',
+      icon: '',
+      iconFamily: '',
+      label: 'C#',
+      shadowSize: 18,
+      size: 0,
+      sizeWrapper: 82,
+      svgRef: 'CSharp',
+    },
+    {
+      color: '#EBD51D',
+      icon: 'SiStyledcomponents',
+      iconFamily: 'Si',
+      label: 'Styled Components',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#E0E0E0',
+      icon: 'SiPostgresql',
+      iconFamily: 'Si',
+      label: 'PostgreSQL',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+  ],
+  secondary: [
+    {
+      color: '#3CAF7C',
+      icon: 'FaVuejs',
+      iconFamily: 'Fa',
+      label: 'Vue',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#2449D9',
+      icon: 'FaCss3Alt',
+      iconFamily: 'Fa',
+      label: 'CSS',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#F2437E',
+      icon: 'SiStorybook',
+      iconFamily: 'Si',
+      label: 'Storybook',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#E0E0E0',
+      icon: 'FaUnity',
+      iconFamily: 'Fa',
+      label: 'Unity',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#E11420',
+      icon: 'GoRuby',
+      iconFamily: 'Go',
+      label: 'Ruby on Rails',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+    {
+      color: '#00E161',
+      icon: 'SiMongodb',
+      iconFamily: 'Si',
+      label: 'MongoDB',
+      shadowSize: 18,
+      size: 70,
+      sizeWrapper: 82,
+    },
+  ],
 };

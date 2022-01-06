@@ -10,6 +10,9 @@ import Layout from 'layouts';
 // TO:DO fix tablet - desktop breakpoint styling EVERYWHERE!
 // TO:DO strip thema of unused colors object
 // TO:DO implement local theme clearing based on last site load
+// TO:DO DRY up getHeadingStyle()
+// TO:DO fix 'Type unknown[] is not assignable...' errors in .map()
+// TO:DO split out icon and link with box shadow atoms
 
 const App = () => {
   const { theme, themeLoaded, getFonts } = useTheme();

@@ -3,7 +3,7 @@ import { ProjectsController } from 'controllers/Projects';
 
 const Projects = () => (
   <>
-    <div id='projects' style={{ height: '100vh' }}>
+    <div id='projects'>
       <ProjectsController />
     </div>
   </>
