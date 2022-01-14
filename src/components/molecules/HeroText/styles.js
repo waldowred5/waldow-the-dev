@@ -86,7 +86,6 @@ export const StyledDivider = styled.div`
   // Sizing
   height: ${getDividerStyle('dividerSize')}px;
   margin-bottom: ${getHeroTextStyle('dividerMargin')}px;
-  // TO:DO add this component to a layout then move this to divider config
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display

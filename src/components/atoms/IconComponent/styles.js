@@ -64,9 +64,9 @@ export const StyledIconContainer = styled('div', iconProps)`
   transition: all 0.25s ease-in-out;
 
   // Color
-  background: // TO:DO set as TertiaryBright in thema
+  background:
     ${({ colorWrapper }) => colorWrapper ? `${colorWrapper}26` : '#C56CEF26'};
-  box-shadow: // TO:DO set as TertiaryBright in thema
+  box-shadow:
     ${({ colorWrapper, shadowSize }) => colorWrapper ?
       `0 0 ${shadowSize}px ${shadowSize}px ${colorWrapper}26` :
       `0 0 ${shadowSize}px ${shadowSize}px #C56CEF26`
@@ -94,8 +94,8 @@ export const StyledLink = styled('a', iconProps)`
   
   ${StyledIconContainer}:hover {
     // Color
-    background: #07B8ED26; // TO:DO set as TertiaryBright in thema
-    box-shadow: // TO:DO set as TertiaryBright in thema
+    background: #07B8ED26;
+    box-shadow:
       ${({ shadowSize }) => `0 0 ${shadowSize}px ${shadowSize}px #07B8ED26`}
     ;
   }
