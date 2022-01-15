@@ -19,9 +19,17 @@ const getHeroTextStyle = (propName) => ({ theme }) => {
 };
 
 const HeroContainer = styled.div`
+  // Display
   display: flex;
   flex-direction: column;
+  
+  // Sizing
   margin: 24px 24px 88px 24px;
+
+  ${media[SCREEN_SIZE.TABLET]} {
+    // Sizing
+    margin: 0;
+  }
 `;
 
 export const PrimaryHeadingWrapper = styled.div`
@@ -108,8 +116,8 @@ export const StyledHeroText = styled.div`
     
     // Position
     position: absolute;
-    bottom: ${fontPx(72)};
-    right: ${fontPx(48)};
+    bottom: ${fontPx(48)};
+    right: ${fontPx(36)};
   }
 `;
 

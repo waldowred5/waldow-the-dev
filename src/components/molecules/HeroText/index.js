@@ -19,7 +19,7 @@ export const HeroText = () => {
             <SuffixHeading>.the.dev</SuffixHeading>
           </PrimaryHeadingWrapper>
           <SecondaryHeading>
-        Thrill seeker by day, developer by night
+            Thrill seeker by day, developer by night
           </SecondaryHeading>
         </StyledHeroText>
       </HeroContainer>

@@ -1,12 +1,12 @@
 import React from 'react';
-// import { CubeAnimation } from 'components/atoms/CubeAnimation';
 import { HeroText } from 'components/molecules/HeroText';
-import { AnimationCanvasHero } from 'components/atoms/AnimationCanvasHero';
+import { HeroCanvas } from 'components/animation/HeroCanvas';
+// import { AnimationCanvasHero } from 'components/atoms/AnimationCanvasHero';
 
 export const HeroController = () => (
   <>
-    {/* <CubeAnimation />*/}
-    <AnimationCanvasHero />
+    <HeroCanvas />
+    {/* <AnimationCanvasHero />*/}
     <HeroText />
   </>
 );
