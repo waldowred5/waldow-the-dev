@@ -7,8 +7,6 @@ export const getNavBarStyle = (propName) => ({ theme }) => {
   return navBar[propName];
 };
 
-// TO:DO Change/remove mobile styling
-
 export const BackgroundFilter = styled.div`
   // Color
   background: ${getNavBarStyle('backgroundColor')};

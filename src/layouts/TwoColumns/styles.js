@@ -61,7 +61,6 @@ export const ColumnWrapper = styled.div`
   }
 `;
 
-// TO:DO Fix these divs
 export const PrimaryColumn = styled.div`
   // Display
   //display: block;

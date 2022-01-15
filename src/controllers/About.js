@@ -7,7 +7,6 @@ import { Skills } from 'components/organisms/Skills';
 export const AboutController = () => (
   <div>
     <PageHeader label='About' />
-    {/* TO:DO Set label based on route*/}
     <TwoColumns>
       <Bio />
       <Skills />

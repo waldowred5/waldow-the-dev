@@ -6,7 +6,6 @@ import { SiteConstructionContent } from
 export const BlogController = () => (
   <div>
     <PageHeader label='Blog' />
-    {/* TO:DO Set label based on route*/}
     <SiteConstructionContent />
   </div>
 );

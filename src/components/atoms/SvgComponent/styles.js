@@ -49,8 +49,8 @@ export const StyledLink = styled.a`
   transition: all 0.25s ease-in-out;
 
   // Color
-  background: #38E00026; // TO:DO set as TertiaryBright in thema 
-  box-shadow: 0 0 24px 24px #38E00026; // TO:DO set as TertiaryBright in thema
+  background: #38E00026; 
+  box-shadow: 0 0 24px 24px #38E00026;
 
   // Display
   display: flex;
@@ -60,9 +60,7 @@ export const StyledLink = styled.a`
 
   &:hover {
     // Color
-    background: #07B8ED26; // TO:DO set as TertiaryBright in thema
-
-    // TO:DO set as TertiaryBright in thema
+    background: #07B8ED26;
     box-shadow: 
       0 0 24px 24px #07B8ED26;
   }
