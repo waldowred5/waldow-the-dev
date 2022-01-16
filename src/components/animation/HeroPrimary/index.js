@@ -4,7 +4,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 export const HeroPrimary = () => {
   const mesh = useRef();
   useThree(({ camera }) => {
-    camera.position.set(0, 0, 7);
+    camera.position.set(-7.5, 0, 0);
   });
   useFrame(() => {
     mesh.current.rotation.y -= 0.01;
