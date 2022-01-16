@@ -1,11 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export const PointLight = ({ color, position }) => {
-  const light = useRef();
   return (
     <pointLight
-      ref={light}
       args={color}
       position={position}
     />
