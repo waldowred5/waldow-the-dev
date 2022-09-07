@@ -7,7 +7,8 @@ import {
   NavMenuMobile,
   StyledNavBar,
 } from './styles';
-import { Logo } from 'components/atoms/Logo';
+import { LogoTwo } from 'components/atoms/LogoTwo';
+import { LogoThree } from 'components/atoms/LogoThree';
 import PropTypes, { shape } from 'prop-types';
 import { NavItem } from 'components/atoms/NavItem';
 import ThemeButton from 'componentsSmart/themeSelector';
@@ -18,8 +19,8 @@ const RoutesList = ({ isMobile, routes }) => {
     <>
       {routes.map((route, index) => (
         isMobile ?
-        <NavItemMobile key={index} label={route.label} id={route.id}/> :
-        <NavItem key={index} label={route.label} id={route.id}/>
+          <NavItemMobile key={index} label={route.label} id={route.id}/> :
+          <NavItem key={index} label={route.label} id={route.id}/>
       ))}
     </>
   );
@@ -38,16 +39,21 @@ export const NavBarMobile = ({ routes, setter, theme }) => (
   <>
     <BackgroundFilter>
       <StyledNavBar>
-        <LogoLinkWrapper to={'/'}><Logo theme={theme} /></LogoLinkWrapper>
-        <ThemeButton setter={setter} />
+        <LogoLinkWrapper to={'/'}>
+          <LogoTwo theme={theme}/>
+        </LogoLinkWrapper>
+        <LogoLinkWrapper to={'/'}>
+          <LogoThree theme={theme}/>
+        </LogoLinkWrapper>
+        <ThemeButton setter={setter}/>
         <NavMenu>
-          <RoutesList isMobile={false} routes={routes} />
+          <RoutesList isMobile={false} routes={routes}/>
         </NavMenu>
       </StyledNavBar>
     </BackgroundFilter>
     <BackgroundFilterMobile>
       <NavMenuMobile>
-        <RoutesList isMobile={true} routes={routes} />
+        <RoutesList isMobile={true} routes={routes}/>
       </NavMenuMobile>
     </BackgroundFilterMobile>
   </>

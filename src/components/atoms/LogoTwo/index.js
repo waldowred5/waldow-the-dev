@@ -15,7 +15,7 @@ const lang = {
   secondaryHeading: '.the.dev',
 };
 
-export const Logo = ({ theme }) => (
+export const LogoTwo = ({ theme }) => (
   <StyledLogo>
     <OuterContainer>
       <InnerContainer>
@@ -35,6 +35,6 @@ export const Logo = ({ theme }) => (
   </StyledLogo>
 );
 
-Logo.propTypes = {
+LogoTwo.propTypes = {
   theme: PropTypes.object,
 };

@@ -4,7 +4,7 @@ import StyledNavBar, {
   LogoLinkWrapper,
   NavMenu,
 } from './styles';
-import { Logo } from 'components/atoms/Logo';
+import { LogoTwo } from 'components/atoms/LogoTwo';
 import PropTypes, { shape } from 'prop-types';
 import { NavItem } from 'components/atoms/NavItem';
 import ThemeButton from 'componentsSmart/themeSelector';
@@ -12,7 +12,7 @@ import ThemeButton from 'componentsSmart/themeSelector';
 export const NavBar = ({ routes, setter, theme }) => (
   <BackgroundFilter>
     <StyledNavBar>
-      <LogoLinkWrapper to={'/'}><Logo theme={theme} /></LogoLinkWrapper>
+      <LogoLinkWrapper to={'/'}><LogoTwo theme={theme}/></LogoLinkWrapper>
       <ThemeButton setter={setter}>Theme</ThemeButton>
       <NavMenu>
         {routes.map((route, index) => (

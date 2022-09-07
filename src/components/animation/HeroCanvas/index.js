@@ -11,7 +11,7 @@ export const HeroCanvas = ({ lights, trigPaths }) => {
   return (
     <CanvasContainer>
       <Canvas>
-        <ControlsTrackball />
+        <ControlsTrackball/>
         {
           lights.map((light, index) => {
             return (
@@ -23,7 +23,7 @@ export const HeroCanvas = ({ lights, trigPaths }) => {
             );
           })
         }
-        <HeroPrimary />
+        <HeroPrimary/>
         {
           trigPaths.map((path, index) => {
             return (

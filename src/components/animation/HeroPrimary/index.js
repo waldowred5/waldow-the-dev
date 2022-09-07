@@ -17,7 +17,7 @@ export const HeroPrimary = () => {
         rotation={[60, 0, 0]}
       >
         <octahedronGeometry args={[2, 0]}/>
-        <meshLambertMaterial color={0xFFFFFF} />
+        <meshLambertMaterial color={0xFFFFFF}/>
       </mesh>
     </>
   );
