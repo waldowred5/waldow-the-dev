@@ -23,7 +23,7 @@ export const LogoThree = ({ theme }) => (
   <LogoCanvasContainer>
     <Canvas>
       <PointLight
-        color={[0xFFFFFF, 3, 15]}
+        color={[0xFFFFFF, 3, 12]}
         position={[0, 0, 8]}
       />
       <LogoPrimary/>
