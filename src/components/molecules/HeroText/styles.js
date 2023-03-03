@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { fontPx, media, SCREEN_SIZE } from 'utils/styles/layout';
 import { FONT_FAMILY, FONT_WEIGHT, HEADING_VARIANT } from 'utils/constants';
 import { getFontFamily, getFontWeight } from 'utils/styles/theme';
+import { NavLink } from 'react-router-dom';
 
 const getHeadingStyle = (colorVariant, propName) => ({ theme }) => {
   return theme.components.heading[colorVariant][propName];
@@ -22,7 +23,7 @@ const HeroContainer = styled.div`
   // Display
   display: flex;
   flex-direction: column;
-  
+
   // Sizing
   margin: 24px 24px 88px 24px;
 
@@ -35,7 +36,7 @@ const HeroContainer = styled.div`
 export const PrimaryHeadingWrapper = styled.div`
   // Color
   color: ${getHeadingStyle(HEADING_VARIANT.SECONDARY, 'color')};
-  
+
   // Display
   display: flex;
   flex-direction: row;
@@ -61,10 +62,16 @@ export const PrimaryHeading = styled.h1`
   }
 `;
 
-export const SecondaryHeading = styled.h3`
+export const SecondaryHeadingWrapper = styled.div`
   // Color
   color: ${getHeadingStyle(HEADING_VARIANT.TERTIARY, 'color')};
-  
+
+  // Display
+  display: flex;
+  flex-direction: row;
+`;
+
+export const SecondaryHeading = styled.h3`
   // Font
   font-size: ${getHeroTextStyle('secondaryHeadingSizeMobile')}px;
   font-weight: ${getFontWeight(FONT_WEIGHT.REGULAR)};
@@ -78,19 +85,39 @@ export const SecondaryHeading = styled.h3`
     // Font
     font-size: ${getHeroTextStyle('secondaryHeadingSizeTablet')}px;
     line-height: ${getHeroTextStyle('secondaryHeadingLineHeightTablet')}px;
-    
+
     // Sizing
     margin: ${getHeroTextStyle('secondaryHeadingMargin')};
   }
 `;
 
+export const SecondaryHeadingLinkWrapper = styled.h3`
+  // Sizing
+  margin: 0;
+
+  text-decoration: none;
+
+  ${media[SCREEN_SIZE.TABLET]} {
+    // Font
+    font-size: ${getHeroTextStyle('secondaryHeadingSizeTablet')}px;
+    line-height: ${getHeroTextStyle('secondaryHeadingLineHeightTablet')}px;
+
+    // Sizing
+    margin: ${getHeroTextStyle('secondaryHeadingMargin')};
+  }
+`;
+
+export const SecondaryHeadingLink = styled(NavLink)`
+  text-decoration: none;
+`;
+
 export const StyledDivider = styled.div`
   // Color
   background: ${getDividerStyle('dividerColor')};
-  
+
   // Display
   display: flex;
-  
+
   // Sizing
   height: ${getDividerStyle('dividerSize')}px;
   margin-bottom: ${getHeroTextStyle('dividerMargin')}px;
@@ -106,14 +133,14 @@ export const StyledHeroText = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  
+
   // Sizing
   //margin-bottom: 24px;
 
   ${media[SCREEN_SIZE.TABLET]} {
     // Display
     align-items: flex-end;
-    
+
     // Position
     position: absolute;
     bottom: ${fontPx(48)};

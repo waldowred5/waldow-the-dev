@@ -1,6 +1,6 @@
 {
-  "data" : {
-    "dark" : {
+  "data": {
+    "dark": {
       "id": "T_001",
       "name": "Dark",
       "body": "#071D3A",
@@ -52,13 +52,13 @@
           "primaryHeadingLineHeightTablet": 110,
           "primaryHeadingMarginMobile": "0 2px 0 0",
           "primaryHeadingMarginTablet": "0 8px 0 0",
-          "secondaryHeadingSizeMobile":  16,
-          "secondaryHeadingSizeTablet":  48,
+          "secondaryHeadingSizeMobile": 16,
+          "secondaryHeadingSizeTablet": 48,
           "secondaryHeadingLineHeightMobile": 18,
           "secondaryHeadingLineHeightTablet": 56,
-          "secondaryHeadingMargin": "0 48px 0 0",
-          "suffixHeadingSizeMobile":  36,
-          "suffixHeadingSizeTablet":  64,
+          "secondaryHeadingMargin": "0 24px 0 0",
+          "suffixHeadingSizeMobile": 36,
+          "suffixHeadingSizeTablet": 64,
           "suffixHeadingLineHeightMobile": 40,
           "suffixHeadingLineHeightTablet": 68,
           "suffixHeadingMarginMobile": "12px 0 0 0",
@@ -136,7 +136,7 @@
         "bold": 700
       }
     },
-    "light" : {
+    "light": {
       "id": "T_002",
       "name": "Light",
       "body": "#0D376D",
@@ -188,13 +188,13 @@
           "primaryHeadingLineHeightTablet": 110,
           "primaryHeadingMarginMobile": "0 2px 0 0",
           "primaryHeadingMarginTablet": "0 8px 0 0",
-          "secondaryHeadingSizeMobile":  16,
-          "secondaryHeadingSizeTablet":  48,
+          "secondaryHeadingSizeMobile": 16,
+          "secondaryHeadingSizeTablet": 48,
           "secondaryHeadingLineHeightMobile": 18,
           "secondaryHeadingLineHeightTablet": 56,
-          "secondaryHeadingMargin": "0 48px 0 0",
-          "suffixHeadingSizeMobile":  36,
-          "suffixHeadingSizeTablet":  64,
+          "secondaryHeadingMargin": "0 24px 0 0",
+          "suffixHeadingSizeMobile": 36,
+          "suffixHeadingSizeTablet": 64,
           "suffixHeadingLineHeightMobile": 40,
           "suffixHeadingLineHeightTablet": 68,
           "suffixHeadingMarginMobile": "12px 0 0 0",

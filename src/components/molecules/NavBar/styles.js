@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { media, SCREEN_SIZE } from 'utils/styles/layout';
 
 export const getNavBarStyle = (propName) => ({ theme }) => {
@@ -42,7 +41,7 @@ const StyledNavBar = styled.nav`
   justify-content: space-between;
 `;
 
-export const LogoLinkWrapper = styled(Link)`
+export const LogoLinkWrapper = styled.div`
   // Display
   display: flex;
 `;
@@ -51,7 +50,7 @@ export const NavMenu = styled.ul`
   // Display
   display: flex;
   align-items: center;
-  
+
   // Sizing
   padding: 0;
   margin: 0;

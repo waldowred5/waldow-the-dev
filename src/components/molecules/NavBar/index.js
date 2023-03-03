@@ -12,7 +12,9 @@ import ThemeButton from 'componentsSmart/themeSelector';
 export const NavBar = ({ routes, setter, theme }) => (
   <BackgroundFilter>
     <StyledNavBar>
-      <LogoLinkWrapper to={'/'}><Logo theme={theme} /></LogoLinkWrapper>
+      <LogoLinkWrapper>
+        <Logo theme={theme}/>
+      </LogoLinkWrapper>
       <ThemeButton setter={setter}>Theme</ThemeButton>
       <NavMenu>
         {routes.map((route, index) => (

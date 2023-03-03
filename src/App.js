@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { ThemeProvider } from 'styled-components';
 import WebFont from 'webfontloader';
 import { GlobalStyles } from 'theme/globalStyles';
 import { useTheme } from 'theme/useTheme';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from 'layouts';
+import Macbook from './pages/home/Macbook';
+import { LoadingSpinner } from './components/atoms/LoadingSpinner';
 
 const App = () => {
   const { theme, themeLoaded, getFonts } = useTheme();
@@ -26,9 +28,35 @@ const App = () => {
     <>
       {
         themeLoaded && <ThemeProvider theme={selectedTheme}>
-          <GlobalStyles />
+          <GlobalStyles/>
           <Router style={{ fontFamily: selectedTheme.fonts.primary }}>
-            <Layout setter={setSelectedTheme} theme={selectedTheme} />
+            <Routes>
+              <Route
+                path="*"
+                element={
+                  <Layout setter={setSelectedTheme} theme={selectedTheme}/>
+                }/>
+              <Route
+                path="/macbook"
+                element={
+                  <Suspense
+                    fallback={
+                      <h1
+                        style={{
+                          display: 'flex',
+                          color: '#C56CEF',
+                          alignSelf: 'center',
+                        }}
+                      >
+                        <LoadingSpinner/>
+                        {/* Loading... */}
+                      </h1>
+                    }
+                  >
+                    <Macbook/>
+                  </Suspense>
+                }/>
+            </Routes>
           </Router>
         </ThemeProvider>
       }
