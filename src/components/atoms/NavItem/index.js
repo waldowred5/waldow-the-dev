@@ -7,7 +7,7 @@ export const NavItem = ({ label, id }) => {
     <StyledNavItem>
       <NavLink
         to={id}
-        activeClass='active'
+        activeClass="active"
         duration={500}
         spy={true}
         smooth={true}

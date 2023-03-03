@@ -17,7 +17,13 @@ const lang = {
 
 export const Logo = ({ theme }) => (
   <StyledLogo>
-    <OuterContainer>
+    <OuterContainer
+      to={'hero'}
+      activeClass="active"
+      duration={500}
+      spy={true}
+      smooth={true}
+    >
       <InnerContainer>
         <TextWrapper>
           <MobilePrimaryHeading theme={theme}>

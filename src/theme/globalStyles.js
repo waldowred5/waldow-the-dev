@@ -2,11 +2,15 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
-    margin: 0; 
+    margin: 0;
     background: ${({ theme }) => theme.body};
-    // color: ${({ theme }) => theme.colors.text};
+      // color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme }) => theme.fonts.primary};
     //transition: all 0.50s ease-in-out;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   // a {
